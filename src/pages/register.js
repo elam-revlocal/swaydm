@@ -68,8 +68,8 @@ function RegisterPage() {
           validate={validate}
         >
           {({ handleSubmit2, submitting }) => (
-            <form name="register" data-netlify="true" onSubmit={handleSubmit2} className={classes.form} noValidate>
-                <input type="hidden" name="form-name" value="register" />
+            <form name="register" method="post" data-netlify="true" onSubmit={handleSubmit2} className={classes.form} noValidate>
+              <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <Field
