@@ -208,7 +208,7 @@ export default function Navbar() {
             underline="none"
             className={classes.title}
           >
-            OneSnappy
+            SwayDM
           </MuiLink>
           {matchesXS ? drawer : tabs}
         </Toolbar>

@@ -98,7 +98,7 @@ function ProductHero(props) {
         </>
       )}
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
+        Slide Into Those DMs
       </Typography>
       <Typography
         color="inherit"
@@ -106,7 +106,7 @@ function ProductHero(props) {
         variant="h5"
         className={classes.h5}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Make connections you never thought were possible.
       </Typography>
       <Button
         color="secondary"

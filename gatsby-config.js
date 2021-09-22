@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Gatsby Material-UI Starter`,
+    title: `SwayDM`,
     titleTemplate: `OneSnappy | %s`,
     image: `default.jpg`,
     description: `Gatsby/Material-UI Template via SnappyWebDesign.net`,

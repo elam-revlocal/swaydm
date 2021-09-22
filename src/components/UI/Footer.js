@@ -91,8 +91,8 @@ export default function Footer() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://snappywebdesign.net/" className={classes.icon}>
-                  <img src={FacebookIcon} alt="Facebook" />
+                <a href="https://www.instagram.com/swaydm/" className={classes.icon}>
+                  <img src={FacebookIcon} alt="Instagram" />
                 </a>
                 <a
                   href="https://twitter.com/snappy_web"

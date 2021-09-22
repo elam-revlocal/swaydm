@@ -62,7 +62,7 @@ function RegisterPage() {
             </MuiLink>
           </Typography>
         </React.Fragment>
-        <Form
+        <Form name="register" netlify
           onSubmit={handleSubmit}
           subscription={{ submitting: true }}
           validate={validate}
