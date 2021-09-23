@@ -11,8 +11,8 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: theme.spacing(9),
-    marginBottom: theme.spacing(9),
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(10),
   },
   button: {
     border: "4px solid currentColor",

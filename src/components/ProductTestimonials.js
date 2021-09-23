@@ -11,7 +11,7 @@ import testimonialPhoto from "../assets/images/testimonialPhoto.jpg"
 const styles = theme => ({
   root: {
     marginTop: theme.spacing(20),
-    marginBottom: 0,
+    marginBottom: theme.spacing(20),
     display: "flex",
   },
   cardWrapper: {
@@ -23,9 +23,11 @@ const styles = theme => ({
     backgroundColor: theme.palette.secondary.orange,
     color: theme.palette.primary.white,
     padding: theme.spacing(8, 3),
+    minHeight: 350,
   },
   cardContent: {
-    maxWidth: 400,
+    maxWidth: 500,
+    height: 350,
   },
 
   imagesWrapper: {
@@ -49,6 +51,8 @@ const styles = theme => ({
     bottom: 0,
     width: "100%",
     maxWidth: 600,
+    maxHeight: 400,
+
   },
 })
 
