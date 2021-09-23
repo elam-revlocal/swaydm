@@ -14,13 +14,18 @@ import SwipeableDrawer from "@material-ui/core/SwipeableDrawer"
 import MenuIcon from "@material-ui/icons/Menu"
 import IconButton from "@material-ui/core/IconButton"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
+import Button from "../Utils/Button"
 
 const useStyles = makeStyles(theme => ({
+  abRoot: {
+    backgroundColor: "white",
+  },
   root: {
-    color: theme.palette.common.white,
+    color: theme.palette.primary.black,
   },
   title: {
     fontSize: "1.4rem",
+    color: theme.palette.primary.black,
   },
   toolbarMargin: {
     ...theme.mixins.toolbar,
@@ -57,28 +62,29 @@ const useStyles = makeStyles(theme => ({
   },
   tabRoot: {
     minWidth: 10,
+    color: theme.palette.primary.black,
   },
   tabSecondary: {
     fontSize: "1rem",
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.black,
   },
   drawer: {
-    backgroundColor: theme.palette.primary.main,
-    ...theme.typography.h6,
+    backgroundColor: theme.palette.primary.white,
+    ...theme.typography.subtitle1,
   },
   drawerItem: {
-    color: theme.palette.secondary.light,
-    textTransform: "uppercase",
+    color: theme.palette.secondary.black,
+    // textTransform: "uppercase",
     fontSize: "1rem",
-    fontWeight: 500,
+    fontWeight: 300,
     opacity: 0.9,
     padding: ".25em 1em",
   },
   drawerItemSecondary: {
-    color: theme.palette.secondary.main,
-    textTransform: "uppercase",
+    color: theme.palette.secondary.black,
+    // textTransform: "uppercase",
     fontSize: "1rem",
-    fontWeight: 900,
+    fontWeight: 300,
     opacity: 0.95,
     padding: ".25em 1em",
   },
@@ -111,7 +117,7 @@ export default function Navbar() {
             divider
             button
             component={Link}
-            to="/login"
+            to="/"
             title="Link to Login Page"
             onClick={() => {
               setOpenDrawer(false)
@@ -148,7 +154,7 @@ export default function Navbar() {
           onClick={() => setOpenDrawer(!openDrawer)}
           disableRipple
         >
-          <MenuIcon style={{ color: theme.palette.secondary.light }} />
+          <MenuIcon style={{ color: theme.palette.primary.main}} />
         </IconButton>
       </div>
     </>
@@ -197,10 +203,9 @@ export default function Navbar() {
   return (
     <>
       <CssBaseline />
-      <AppBar>
+      <AppBar className={classes.abRoot}>
         <Toolbar>
-          <div className={classes.left} />
-          <MuiLink
+        <MuiLink
             component={Link}
             to="/"
             color="inherit"
@@ -210,6 +215,7 @@ export default function Navbar() {
           >
             SwayDM
           </MuiLink>
+          <div className={classes.center} />
           {matchesXS ? drawer : tabs}
         </Toolbar>
       </AppBar>

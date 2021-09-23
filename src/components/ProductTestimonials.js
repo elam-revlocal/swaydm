@@ -5,13 +5,12 @@ import Grid from "@material-ui/core/Grid"
 import Hidden from "@material-ui/core/Hidden"
 import Container from "@material-ui/core/Container"
 import Typography from "./Utils/Typography"
-import TextField from "./Utils/TextField"
-import Snackbar from "./Utils/Snackbar"
-import Button from "./Utils/Button"
+import testimonialPhoto from "../assets/images/testimonialPhoto.jpg"
+
 
 const styles = theme => ({
   root: {
-    marginTop: theme.spacing(10),
+    marginTop: theme.spacing(20),
     marginBottom: 0,
     display: "flex",
   },
@@ -19,22 +18,16 @@ const styles = theme => ({
     zIndex: 1,
   },
   card: {
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: theme.palette.secondary.fuschia,
+    display: "block",
+    borderRadius: 10,
+    backgroundColor: theme.palette.secondary.orange,
+    color: theme.palette.primary.white,
     padding: theme.spacing(8, 3),
   },
   cardContent: {
     maxWidth: 400,
   },
-  textField: {
-    width: "100%",
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(2),
-  },
-  button: {
-    width: "100%",
-  },
+
   imagesWrapper: {
     position: "relative",
   },
@@ -49,6 +42,7 @@ const styles = theme => ({
   // },
   image: {
     position: "absolute",
+    borderRadius: 10,
     top: -28,
     left: -28,
     right: 0,
@@ -58,7 +52,7 @@ const styles = theme => ({
   },
 })
 
-function ProductCTA(props) {
+function ProductTestimonials(props) {
   const { classes } = props
   const [open, setOpen] = React.useState(false)
 
@@ -76,27 +70,15 @@ function ProductCTA(props) {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form onSubmit={handleSubmit} className={classes.cardContent}>
-              <Typography variant="h2" component="h2" gutterBottom>
-                Learn More
+              <Typography variant="h4" component="h4" gutterBottom>
+                Influencer Testimonial
               </Typography>
               <Typography variant="h5">
-                Subscribe for more updates and release info.
+                "Working with the people at SwayDm has been a breeze! I love being able to connect with my fans in an innovative way!"
               </Typography>
-              <TextField
-                noBorder
-                className={classes.textField}
-                placeholder="Your email"
-              />
-              <Button
-                type="submit"
-                color="primary"
-                variant="contained"
-                className={classes.button}
-              >
-                Let's Go!
-              </Button>
-            </form>
+              <Typography variant="subtitle1">
+              - Influencer name
+              </Typography>
           </div>
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
@@ -104,24 +86,19 @@ function ProductCTA(props) {
             {/* @ TODO - REPLACE IMAGE DOTS */}
             {/* <div className={classes.imageDots} />  */}
             <img
-              src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750&q=80"
+              src= {testimonialPhoto}
               alt="call to action"
               className={classes.image}
             />
           </Hidden>
         </Grid>
       </Grid>
-      <Snackbar
-        open={open}
-        onClose={handleClose}
-        message="You're subscribed!"
-      />
     </Container>
   )
 }
 
-ProductCTA.propTypes = {
+ProductTestimonials.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles)(ProductCTA)
+export default withStyles(styles)(ProductTestimonials)

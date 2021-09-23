@@ -13,11 +13,11 @@ const styles = theme => ({
   root: {
     display: "flex",
     overflow: "hidden",
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.extended.blueGreyMedium,
   },
   container: {
     marginTop: theme.spacing(15),
-    marginBottom: theme.spacing(30),
+    marginBottom: theme.spacing(15),
     display: "flex",
     position: "relative",
   },
@@ -26,6 +26,7 @@ const styles = theme => ({
     flexDirection: "column",
     alignItems: "center",
     padding: theme.spacing(0, 5),
+    color: theme.palette.primary.black,
   },
   image: {
     height: 55,
@@ -33,6 +34,7 @@ const styles = theme => ({
   title: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
+    color: theme.palette.primary.black,
   },
   curvyLines: {
     pointerEvents: "none",
@@ -61,14 +63,11 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Start a trend
               </Typography>
               <Typography variant="h5">
                 {
-                  "From the latest trendy boutique hotel to the iconic palace with XXL pool"
-                }
-                {
-                  ", go for a mini-vacation just a few subway stops away from your home."
+                  "Get ahead of the crowd in a new way to utilize social media and technology."
                 }
               </Typography>
             </div>
@@ -77,13 +76,12 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues2} alt="graph" />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Connect with followers
               </Typography>
               <Typography variant="h5">
                 {
-                  "Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… "
+                  "Increase your influence by creating more connections with followers."
                 }
-                {"your Sundays will not be alike."}
               </Typography>
             </div>
           </Grid>
@@ -91,11 +89,10 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues3} alt="clock" />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Earn Money
               </Typography>
               <Typography variant="h5">
-                {"By registering, you will access specially negotiated rates "}
-                {"that you will not find anywhere else."}
+                {"Continue doing what you already do and get paid for it too."}
               </Typography>
             </div>
           </Grid>

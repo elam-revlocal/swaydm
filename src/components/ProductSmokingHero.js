@@ -16,7 +16,7 @@ const styles = theme => ({
   },
   button: {
     border: "4px solid currentColor",
-    borderRadius: 0,
+    borderRadius: 10,
     height: "auto",
     padding: theme.spacing(2, 5),
   },
@@ -36,13 +36,13 @@ function ProductSmokingHero(props) {
     <Container className={classes.root} component="section">
       <Button className={classes.button}>
         <Typography variant="h4" component="span">
-          Got any questions? Need help?
+          Interested in being an Earner?
         </Typography>
       </Button>
       <Typography variant="subtitle1" className={classes.link}>
-        We are here to help. Get in touch!
+        We'd love to work with you. <a href="/register">Get in touch!</a>
       </Typography>
-      <img src={ProductBuoy} className={classes.buoy} alt="buoy" />
+      {/* <img src={ProductBuoy} className={classes.buoy} alt="buoy" /> */}
     </Container>
   )
 }

@@ -7,6 +7,7 @@ import ProductCategories from "../components/ProductCategories"
 import ProductHowItWorks from "../components/ProductHowItWorks"
 import ProductCTA from "../components/ProductCTA"
 import ProductSmokingHero from "../components/ProductSmokingHero"
+import ProductTestimonials from "../components/ProductTestimonials"
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
       <Seo title="Home" />
       <ProductHero dynamic />
       <ProductValues />
-      <ProductCategories />
-      <ProductHowItWorks />
-      <ProductCTA />
+      {/* <ProductCategories /> */}
+      {/* <ProductHowItWorks /> */}
+      <ProductTestimonials />
+      {/* <ProductCTA /> */}
       <ProductSmokingHero />
     </Layout>
   )

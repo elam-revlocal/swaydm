@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import clsx from "clsx"
 import { withStyles } from "@material-ui/core/styles"
 import Container from "@material-ui/core/Container"
-import productHeroWonder from "../assets/images/productHeroWonder.png"
+//import productHeroWonder from "../assets/images/productHeroWonder.png"
 import productHeroArrowDown from "../assets/images/productHeroArrowDown.png"
 
 const styles = theme => ({
   root: {
-    color: theme.palette.common.white,
+    color: theme.palette.common.black,
     position: "relative",
     display: "flex",
     alignItems: "center",
@@ -31,7 +31,7 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: "#002e48",
+    backgroundColor: "#ffffff",
     opacity: 0.5,
     zIndex: -1,
   },
@@ -47,7 +47,7 @@ const styles = theme => ({
   },
   arrowDown: {
     position: "absolute",
-    bottom: theme.spacing(4),
+    bottom: theme.spacing(4)
   },
 })
 
@@ -57,10 +57,10 @@ function ProductHeroLayout(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img src={productHeroWonder} alt="wonder" width="147" height="80" />
+        {/* <img src={productHeroWonder} alt="wonder" width="147" height="80" /> */}
         {children}
-        <div className={classes.backdrop} />
-        <div className={clsx(classes.background, backgroundClassName)} />
+        {/* <div className={classes.backdrop} /> */}
+        {/* <div className={clsx(classes.background, backgroundClassName)} /> */}
         <img
           className={classes.arrowDown}
           src={productHeroArrowDown}

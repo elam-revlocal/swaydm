@@ -5,16 +5,16 @@ import { withStyles } from "@material-ui/core/styles"
 import Button from "./Utils/Button"
 import Typography from "./Utils/Typography"
 import ProductHeroLayout from "./ProductHeroLayout"
-import PoolVideo from "../assets/videos/dynamicProductHero.mp4"
-import PoolPlaceholder from "../assets/images/dynamicVidPlaceholder.jpg"
+//import PoolVideo from "../assets/videos/dynamicProductHero.mp4"
+// import PoolPlaceholder from "../assets/images/dynamicVidPlaceholder.jpg"
 
-const backgroundImage =
-  "https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80"
+// const backgroundImage =
+//   "https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80"
 
 const styles = theme => ({
   background: {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: "#7fc7d9", // Average color of the background image.
+    // backgroundImage: `url(${backgroundImage})`,
+    backgroundColor: "#ffffff", // Average color of the background image.
     backgroundPosition: "center",
   },
   button: {
@@ -30,26 +30,26 @@ const styles = theme => ({
   more: {
     marginTop: theme.spacing(2),
   },
-  dynamicBackground: {
-    backgroundImage: `url(${PoolPlaceholder})`,
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    background: "#03a9f4",
-    mixBlendMode: "overlay",
-  },
-  dynamicVideo: {
-    zIndex: -1,
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    opacity: 0.8,
-  },
+  // dynamicBackground: {
+  //   backgroundImage: `url(${PoolPlaceholder})`,
+  //   position: "absolute",
+  //   top: 0,
+  //   left: 0,
+  //   width: "100%",
+  //   height: "100%",
+  //   background: "#03a9f4",
+  //   mixBlendMode: "overlay",
+  // },
+  // dynamicVideo: {
+  //   zIndex: -1,
+  //   position: "absolute",
+  //   top: 0,
+  //   left: 0,
+  //   width: "100%",
+  //   height: "100%",
+  //   objectFit: "cover",
+  //   opacity: 0.8,
+  // },
 })
 
 function ProductHero(props) {
@@ -66,13 +66,13 @@ function ProductHero(props) {
         dynamic ? classes.dynamicBackground : classes.background
       }
     >
-      <img
+      {/* <img
         src={PoolPlaceholder}
         style={{ display: "none" }}
         alt="increase priority"
-      />
+      /> */}
       {/* Increase the network loading priority of the background image. */}
-      {!dynamic && (
+      {/* {!dynamic && (
         <img
           style={{ display: "none" }}
           src={backgroundImage}
@@ -96,7 +96,7 @@ function ProductHero(props) {
             className={classes.dynamicVideo}
           />
         </>
-      )}
+      )} */}
       <Typography color="inherit" align="center" variant="h2" marked="center">
         Slide Into Those DMs
       </Typography>
@@ -106,20 +106,20 @@ function ProductHero(props) {
         variant="h5"
         className={classes.h5}
       >
-        Make connections you never thought were possible.
+        Keep doing what you do. Influence. Connect. We'll handle the rest.
       </Typography>
       <Button
-        color="secondary"
+        color="primary"
         variant="contained"
         size="large"
         className={classes.button}
         component={Link}
         to="/register"
       >
-        Register
+      Learn More
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
+        Watch our video
       </Typography>
     </ProductHeroLayout>
   )

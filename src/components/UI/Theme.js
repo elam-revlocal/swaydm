@@ -4,18 +4,34 @@ import { green, grey, red } from "@material-ui/core/colors"
 const rawTheme = createMuiTheme({
   palette: {
     primary: {
-      light: "#69696a",
-      main: "#28282a",
-      dark: "#1e1e1f",
+      light: "#6a51e7",
+      main: "#3c42c3",
+      dark: "#000065",
+      darkNavy: "#000f1e",
+      navy: "#000065",
+      royal: "#3c42c3",
+      purple: "#6a51e7",
+      white: "#ffffff",
+      black: "#000000"
     },
     secondary: {
-      light: "#fff5f8",
-      main: "#ff3366",
+      light: "#4eb6d5",
+      main: "#ee9085",
       dark: "#e62958",
+      teal: "#25a8af",
+      lightBlue: "#4eb6d5",
+      fuschia: "#ab55c9",
+      orange: "#ee9085",
+      yellow: "#ffd232",
+    },
+    extended: {
+      blueGreyDark: "#7688A9", 
+      blueGreyMedium: "#E4EAF1",
+      blueGreyLight: "#F4F8FB",
     },
     warning: {
-      main: "#ffc071",
-      dark: "#ffb25e",
+      main: "#ffd232",
+      dark: "#ee9085",
     },
     error: {
       xLight: red[50],
@@ -29,17 +45,17 @@ const rawTheme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: "'Work Sans', sans-serif",
+    fontFamily: "'Nunito Sans', sans-serif",
     fontSize: 14,
     fontWeightLight: 300, // Work Sans
     fontWeightRegular: 400, // Work Sans
     fontWeightMedium: 700, // Roboto Condensed
-    fontFamilySecondary: "'Roboto Condensed', sans-serif",
+    fontFamilySecondary:"'Nunito Sans', sans-serif",
   },
 })
 
 const fontHeader = {
-  color: rawTheme.palette.text.primary,
+  color: rawTheme.palette.text.primary.white,
   fontWeight: rawTheme.typography.fontWeightMedium,
   fontFamily: rawTheme.typography.fontFamilySecondary,
   textTransform: "uppercase",

@@ -13,7 +13,7 @@ export default function PrivacyPage() {
           <Typography variant="h3" gutterBottom marked="center" align="center">
             Privacy
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             align="center"
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             <MuiLink href="https://snappywebdesign.net">
               Snappy Web Design
             </MuiLink>
-          </Typography>
+          </Typography> */}
         </Box>
       </Container>
     </Layout>

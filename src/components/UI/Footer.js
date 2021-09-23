@@ -5,16 +5,16 @@ import Grid from "@material-ui/core/Grid"
 import MuiLink from "@material-ui/core/Link"
 import Container from "@material-ui/core/Container"
 import Typography from "../Utils/Typography"
-import TextField from "../Utils/TextField"
+// import TextField from "../Utils/TextField"
 import FacebookIcon from "../../assets/images/facebookIcon.png"
 import TwitterIcon from "../../assets/images/twitterIcon.png"
 
 function Copyright() {
   return (
-    <React.Fragment>
+    <React.Fragment color>
       {"© "}
       <MuiLink color="inherit" href="https://snappywebdesign.net/">
-        Your Website
+        SwayDM
       </MuiLink>{" "}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -24,7 +24,7 @@ function Copyright() {
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.royal,
   },
   container: {
     marginTop: theme.spacing(8),
@@ -43,10 +43,10 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: theme.palette.extended.blueGreyMedium,
     marginRight: theme.spacing(1),
     "&:hover": {
-      backgroundColor: theme.palette.warning.dark,
+      backgroundColor: theme.palette.primary.dark,
     },
   },
   list: {
@@ -58,22 +58,22 @@ const useStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(0.5),
     paddingBottom: theme.spacing(0.5),
   },
-  language: {
-    marginTop: theme.spacing(1),
-    width: 150,
-  },
+  // language: {
+  //   marginTop: theme.spacing(1),
+  //   width: 150,
+  // },
 }))
 
-const LANGUAGES = [
-  {
-    code: "en-US",
-    name: "English",
-  },
-  {
-    code: "fr-FR",
-    name: "Français",
-  },
-]
+// const LANGUAGES = [
+//   {
+//     code: "en-US",
+//     name: "English",
+//   },
+//   {
+//     code: "fr-FR",
+//     name: "Français",
+//   },
+// ]
 
 export default function Footer() {
   const classes = useStyles()
@@ -101,9 +101,6 @@ export default function Footer() {
                   <img src={TwitterIcon} alt="Twitter" />
                 </a>
               </Grid>
-              <Grid item>
-                <Copyright />
-              </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
@@ -123,7 +120,7 @@ export default function Footer() {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={6} sm={8} md={4}>
+          {/* <Grid item xs={6} sm={8} md={4}>
             <Typography variant="h6" marked="left" gutterBottom>
               Language
             </Typography>
@@ -140,8 +137,8 @@ export default function Footer() {
                 </option>
               ))}
             </TextField>
-          </Grid>
-          <Grid item>
+          </Grid> */}
+          {/* <Grid item>
             <Typography variant="caption">
               {"Icons made by "}
               <MuiLink
@@ -169,8 +166,11 @@ export default function Footer() {
                 CC 3.0 BY
               </MuiLink>
             </Typography>
-          </Grid>
-          <Grid item xs={12}>
+          </Grid> */}
+          <Grid item>
+                <Copyright />
+              </Grid>
+          {/* <Grid item xs={12}>
             <Typography variant="caption">
               {"Theme ported by "}
               <MuiLink
@@ -182,7 +182,7 @@ export default function Footer() {
                 Snappy Web Design
               </MuiLink>
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Typography>
