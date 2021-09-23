@@ -8,11 +8,11 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `SwayDM`,
-    titleTemplate: `OneSnappy | %s`,
+    titleTemplate: `${title} | %s`,
     image: `default.jpg`,
-    description: `Gatsby/Material-UI Template via SnappyWebDesign.net`,
-    author: `@snappy_web`,
-    siteUrl: `https://muitemplate.netlify.app`,
+    description: `Marketing site for SwayDM.`,
+    author: `Erica Lam`,
+    siteUrl: `https://swaydm.netlify.app`,
   },
 
   plugins: [

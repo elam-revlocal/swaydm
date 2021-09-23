@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-mui-starter",
+  "name": "Sway DM",
   "private": true,
-  "description": "A Material-UI Template for Gatsby v3",
+  "description": "Marketing site for Sway DM",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
