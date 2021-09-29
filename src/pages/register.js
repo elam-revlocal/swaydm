@@ -54,11 +54,10 @@ function RegisterPage() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign Up
+            Sign Up For Updates
           </Typography>
           <Typography variant="body2" align="center">
             <MuiLink component={Link} to="/login" underline="always">
-              Already have an account?
             </MuiLink>
           </Typography>
         </React.Fragment>

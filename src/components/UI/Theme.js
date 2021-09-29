@@ -4,24 +4,19 @@ import { green, grey, red } from "@material-ui/core/colors"
 const rawTheme = createMuiTheme({
   palette: {
     primary: {
-      light: "#6a51e7",
-      main: "#3c42c3",
-      dark: "#000065",
-      darkNavy: "#000f1e",
-      navy: "#000065",
-      royal: "#3c42c3",
-      purple: "#6a51e7",
+      light: "#9300f5",
+      main: "#9300f5",
+      dark: "#9300f5",
+      purple: "#9300f5",
       white: "#ffffff",
       black: "#000000"
     },
     secondary: {
-      light: "#4eb6d5",
-      main: "#ee9085",
-      dark: "#e62958",
-      teal: "#25a8af",
-      lightBlue: "#4eb6d5",
-      fuschia: "#ab55c9",
-      orange: "#ee9085",
+      light: "#ffd232",
+      main: "#ed6a60",
+      dark: "#ed6a60",
+      darkTeal: "#25a8af",
+      orange: "#ed6a60",
       yellow: "#ffd232",
     },
     extended: {
@@ -31,7 +26,7 @@ const rawTheme = createMuiTheme({
     },
     warning: {
       main: "#ffd232",
-      dark: "#ee9085",
+      dark: "#ed6a60",
     },
     error: {
       xLight: red[50],

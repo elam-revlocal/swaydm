@@ -6,14 +6,14 @@ import MuiLink from "@material-ui/core/Link"
 import Container from "@material-ui/core/Container"
 import Typography from "../Utils/Typography"
 // import TextField from "../Utils/TextField"
-import FacebookIcon from "../../assets/images/facebookIcon.png"
+import instagramIcon from "../../assets/images/instagramIcon.png"
 import TwitterIcon from "../../assets/images/twitterIcon.png"
 
 function Copyright() {
   return (
     <React.Fragment color>
       {"© "}
-      <MuiLink color="inherit" href="https://snappywebdesign.net/">
+      <MuiLink color="inherit" href="">
         SwayDM
       </MuiLink>{" "}
       {new Date().getFullYear()}
@@ -24,11 +24,12 @@ function Copyright() {
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
-    backgroundColor: theme.palette.primary.royal,
+    backgroundColor: theme.palette.primary.purple,
+    color: theme.palette.primary.white,
   },
   container: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(8),
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(6),
     display: "flex",
   },
   iconsWrapper: {
@@ -43,37 +44,25 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: theme.palette.extended.blueGreyMedium,
+    backgroundColor: theme.palette.primary.white,
     marginRight: theme.spacing(1),
     "&:hover": {
-      backgroundColor: theme.palette.primary.dark,
+      backgroundColor: theme.palette.primary.light,
     },
   },
   list: {
     margin: 0,
     listStyle: "none",
     padding: 0,
+    zIndex: "1"
   },
   listItem: {
     paddingTop: theme.spacing(0.5),
     paddingBottom: theme.spacing(0.5),
+    textDecoration: "none",
+    color: theme.palette.primary.white,
   },
-  // language: {
-  //   marginTop: theme.spacing(1),
-  //   width: 150,
-  // },
 }))
-
-// const LANGUAGES = [
-//   {
-//     code: "en-US",
-//     name: "English",
-//   },
-//   {
-//     code: "fr-FR",
-//     name: "Français",
-//   },
-// ]
 
 export default function Footer() {
   const classes = useStyles()
@@ -92,10 +81,10 @@ export default function Footer() {
             >
               <Grid item className={classes.icons}>
                 <a href="https://www.instagram.com/swaydm/" className={classes.icon}>
-                  <img src={FacebookIcon} alt="Instagram" />
+                  <img src={instagramIcon} alt="Instagram" />
                 </a>
                 <a
-                  href="https://twitter.com/snappy_web"
+                  href=""
                   className={classes.icon}
                 >
                   <img src={TwitterIcon} alt="Twitter" />
@@ -109,12 +98,12 @@ export default function Footer() {
             </Typography>
             <ul className={classes.list}>
               <li className={classes.listItem}>
-                <MuiLink component={Link} to="/terms">
+                <MuiLink component={Link} to="/terms" className={classes.listItem}>
                   Terms
                 </MuiLink>
               </li>
               <li className={classes.listItem}>
-                <MuiLink component={Link} to="/privacy">
+                <MuiLink component={Link} to="/privacy" className={classes.listItem}>
                   Privacy
                 </MuiLink>
               </li>

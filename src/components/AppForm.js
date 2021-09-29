@@ -11,6 +11,7 @@ const styles = theme => ({
     backgroundRepeat: "no-repeat",
   },
   paper: {
+    borderRadius: 10,
     padding: theme.spacing(4, 3),
     [theme.breakpoints.up("md")]: {
       padding: theme.spacing(8, 6),
@@ -25,7 +26,7 @@ function AppForm(props) {
     <div className={classes.root}>
       <Container maxWidth="sm">
         <Box mt={7} mb={12}>
-          <Paper className={classes.paper}>{children}</Paper>
+          <Paper className={classes.paper} elevation="2">{children}</Paper>
         </Box>
       </Container>
     </div>

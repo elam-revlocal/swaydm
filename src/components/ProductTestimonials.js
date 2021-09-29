@@ -20,7 +20,7 @@ const styles = theme => ({
   card: {
     display: "block",
     borderRadius: 10,
-    backgroundColor: theme.palette.secondary.orange,
+    backgroundColor: theme.palette.secondary.yellow,
     color: theme.palette.primary.white,
     padding: theme.spacing(8, 3),
     minHeight: 350,

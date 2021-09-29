@@ -9,7 +9,7 @@ import IconButton from "@material-ui/core/IconButton"
 
 const styles = theme => ({
   content: {
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.light,
     color: theme.palette.text.primary,
     flexWrap: "inherit",
     [theme.breakpoints.up("md")]: {

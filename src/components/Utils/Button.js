@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button"
 
 export default withStyles(theme => ({
   root: {
-    backgroundColor: theme.palette.primary.purple,
+    backgroundColor: theme.palette.primary.light,
     borderRadius: 10,
     fontWeight: theme.typography.fontWeightMedium,
     fontFamily: theme.typography.fontFamilySecondary,

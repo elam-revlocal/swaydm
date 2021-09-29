@@ -15,13 +15,20 @@ import MenuIcon from "@material-ui/icons/Menu"
 import IconButton from "@material-ui/core/IconButton"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import Button from "../Utils/Button"
+import Logo from "../../assets/images/logo/png/Sway Logo_Alternate.png"
 
 const useStyles = makeStyles(theme => ({
   abRoot: {
     backgroundColor: "white",
   },
   root: {
-    color: theme.palette.primary.black,
+    color: theme.palette.primary.white,
+  },
+  logo: {
+    height: "100px",
+    width: "auto",
+    marginTop: ".5em",
+    marginBottom: "-.5em"
   },
   title: {
     fontSize: "1.4rem",
@@ -47,7 +54,7 @@ const useStyles = makeStyles(theme => ({
   },
   tabContainer: {
     marginLeft: "auto",
-    marginRight: ".5em",
+    marginRight: "0.5em",
   },
   drawerIconCtr: {
     marginLeft: "auto",
@@ -66,14 +73,17 @@ const useStyles = makeStyles(theme => ({
   },
   tabSecondary: {
     fontSize: "1rem",
-    color: theme.palette.primary.black,
+    color: theme.palette.primary.white,
+  },
+  button: {
+    height: "3.5em",
   },
   drawer: {
     backgroundColor: theme.palette.primary.white,
     ...theme.typography.subtitle1,
   },
   drawerItem: {
-    color: theme.palette.secondary.black,
+    color: theme.palette.primary.black,
     // textTransform: "uppercase",
     fontSize: "1rem",
     fontWeight: 300,
@@ -81,7 +91,7 @@ const useStyles = makeStyles(theme => ({
     padding: ".25em 1em",
   },
   drawerItemSecondary: {
-    color: theme.palette.secondary.black,
+    color: theme.palette.primary.black,
     // textTransform: "uppercase",
     fontSize: "1rem",
     fontWeight: 300,
@@ -118,16 +128,17 @@ export default function Navbar() {
             button
             component={Link}
             to="/"
-            title="Link to Login Page"
+            title="Link to App"
             onClick={() => {
               setOpenDrawer(false)
             }}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
-              Sign In
+              Link to App
             </ListItemText>
           </ListItem>
-          <ListItem
+            <ListItem
+            className={classes.button}
             divider
             button
             component={Link}
@@ -175,15 +186,17 @@ export default function Navbar() {
           <Tab
             className={`${classes.tab}`}
             component={Link}
-            to="/login"
-            label="Sign In"
-            aria-label="Sign In Button"
+//insert href
+            to="/register"
+            label="Link to App"
+            aria-label="Link to App"
             variant="h6"
             underline="none"
             color="inherit"
             disableRipple
             classes={{ root: classes.tabRoot }}
           />
+          <Button className={classes.button} color="primary" variant="contained">           
           <Tab
             className={`${classes.tab}, ${classes.tabSecondary}`}
             classes={{ root: classes.tabRoot }}
@@ -195,6 +208,7 @@ export default function Navbar() {
             underline="none"
             disableRipple
           />
+          </Button>
         </Tabs>
       </div>
     </>
@@ -213,8 +227,12 @@ export default function Navbar() {
             underline="none"
             className={classes.title}
           >
-            SwayDM
-          </MuiLink>
+          <img className={classes.logo}
+          src={Logo}
+          alt="Primary Sway DM Logo"
+          className={classes.logo}
+          />  
+          </MuiLink>          
           <div className={classes.center} />
           {matchesXS ? drawer : tabs}
         </Toolbar>
