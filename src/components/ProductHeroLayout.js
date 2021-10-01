@@ -5,6 +5,7 @@ import { withStyles } from "@material-ui/core/styles"
 import Container from "@material-ui/core/Container"
 //import productHeroWonder from "../assets/images/productHeroWonder.png"
 import productHeroArrowDown from "../assets/images/productHeroArrowDown.png"
+import TwoPhonesMockup from "../assets/images/twoPhonesMockup.png"
 
 const styles = theme => ({
   root: {
@@ -12,7 +13,9 @@ const styles = theme => ({
     position: "relative",
     display: "flex",
     alignItems: "center",
+    justifyContent: "left",
     [theme.breakpoints.up("sm")]: {
+      marginTop: "7em",
       height: "87vh",
       minHeight: 500,
       maxHeight: 1300,
@@ -22,9 +25,23 @@ const styles = theme => ({
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(14),
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "row",
     alignItems: "center",
   },
+  innerContainer: {
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(14),
+    display: "flex",
+    flexDirection: "column",
+  },
+  left: {
+
+  },
+  right: {
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+  },
+},
   backdrop: {
     position: "absolute",
     left: 0,
@@ -57,17 +74,23 @@ function ProductHeroLayout(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        {/* <img src={productHeroWonder} alt="wonder" width="147" height="80" /> */}
+      <Container className={classes.innerContainer}>
+        <div className={classes.left}>
         {children}
-        {/* <div className={classes.backdrop} /> */}
-        {/* <div className={clsx(classes.background, backgroundClassName)} /> */}
-        <img
+        </div>
+        </Container>
+        <div className={classes.right}>
+        <img src={TwoPhonesMockup} alt="Two Phones" width="550" height="auto" />
+        </div>
+        <div className={classes.backdrop} />
+        <div className={clsx(classes.background, backgroundClassName)} /> 
+        {/* <img
           className={classes.arrowDown}
           src={productHeroArrowDown}
           height="16"
           width="12"
           alt="arrow down"
-        />
+        /> */}
       </Container>
     </section>
   )

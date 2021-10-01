@@ -4,15 +4,16 @@ import { green, grey, red } from "@material-ui/core/colors"
 const rawTheme = createMuiTheme({
   palette: {
     primary: {
-      light: "#9300f5",
+      light: "#b647ff",
       main: "#9300f5",
-      dark: "#9300f5",
+      dark: "#e94135",
       purple: "#9300f5",
+      gradient: "linear-gradient(180deg,#9300F50%,#550892100%)",
       white: "#ffffff",
       black: "#000000"
     },
     secondary: {
-      light: "#ffd232",
+      light: "#6200a3",
       main: "#ed6a60",
       dark: "#ed6a60",
       darkTeal: "#25a8af",
@@ -20,9 +21,49 @@ const rawTheme = createMuiTheme({
       yellow: "#ffd232",
     },
     extended: {
-      blueGreyDark: "#7688A9", 
-      blueGreyMedium: "#E4EAF1",
-      blueGreyLight: "#F4F8FB",
+      accent: {        
+        blueGreyLight: "#f4f8fb",        
+        blueGreyMedium: "#e4eaf1",
+        blueGreyDark: "#7688a9",
+      },
+      neutral: {
+        systemGreys100: "#fafbfc",
+        systemGreys200: "#dfe1e6",
+        systemGreys300: "#c1c7d0",
+        systemGreys400: "#7c878e",
+        systemGreys500: "#54585a",
+        systemGreys600: "#313233",
+      },
+      lightest: {
+        purple: "#b647ff", 
+        darkTeal: "#68d9df",
+        orange: "#f5a9a3",
+        yellow: "#ffe485",
+      },
+      lighter: {
+        purple: "#a51fff", 
+        darkTeal: "#35ccd4",
+        orange: "#f1867e",
+        yellow: "#ffdc5c",
+      },
+      main: {
+        purple: "#9300f5", 
+        darkTeal: "#25a8af",
+        orange: "#ed6a60",
+        yellow: "#ffd232",
+      },
+      darker: {
+        purple: "#7a00cc", 
+        darkTeal: "#209297",
+        orange: "#eb5247",
+        yellow: "#ffca0a",
+      },
+      darkest: {
+        purple: "#6200a3", 
+        darkTeal: "#1d8187",
+        orange: "#e94135",
+        yellow: "#f5c000",
+      },
     },
     warning: {
       main: "#ffd232",

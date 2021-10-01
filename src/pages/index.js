@@ -9,19 +9,30 @@ import ProductCTA from "../components/ProductCTA"
 import ProductSmokingHero from "../components/ProductSmokingHero"
 import ProductTestimonials from "../components/ProductTestimonials"
 import ProductVideo from "../components/ProductVideo"
-import ProductAbout from "../components/ProductAbout"
+import WhoWeAre from "../components/WhoWeAre"
+import WhySway from "../components/WhySway"
+import HowItWorks from "../components/HowItWorks"
+import ReleaseInfo from "../components/ReleaseInfo"
+
+
 
 export default function Home() {
   return (
     <Layout>
       <Seo title="Home" />
-      <ProductHero dynamic />
-      <ProductAbout />
+      <ProductHero 
+      //dynamic 
+      />
+      <WhoWeAre />
+      {/* <WhySway /> */}
+      {/* <HowItWorks /> */}
+
       <ProductValues />
-      <ProductVideo />
+      {/* <ProductVideo /> */}
       {/* <ProductCategories /> */}
-      {/* <ProductHowItWorks /> */}
-      <ProductTestimonials />
+      <ProductHowItWorks />
+      {/* <ReleaseInfo /> */}
+      {/* <ProductTestimonials /> */}
       {/* <ProductCTA /> */}
       <ProductSmokingHero />
     </Layout>

@@ -7,6 +7,7 @@ import Typography from "../Utils/Typography"
 const styles = theme => ({
   root: {
     padding: theme.spacing(2),
+    color: theme.palette.primary.white,
   },
   error: {
     backgroundColor: theme.palette.error.xLight,

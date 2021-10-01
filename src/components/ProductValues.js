@@ -13,7 +13,6 @@ const styles = theme => ({
   root: {
     display: "flex",
     overflow: "hidden",
-    backgroundColor: theme.palette.extended.blueGreyMedium,
   },
   container: {
     marginTop: theme.spacing(15),
@@ -25,8 +24,11 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: theme.spacing(0, 5),
+    padding: theme.spacing(5, 5),
     color: theme.palette.primary.black,
+    backgroundColor: theme.palette.extended.neutral.systemGreys100,
+    border: `2px solid ${theme.palette.extended.darkest.orange}`,
+    borderRadius: 10,
   },
   image: {
     height: 55,
@@ -49,11 +51,11 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
+        {/* <img
           src={ProductCurvyLines}
           className={classes.curvyLines}
           alt="curvy lines"
-        />
+        /> */}
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
@@ -63,7 +65,7 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                Start a trend
+                Regain your attention
               </Typography>
               <Typography variant="h5">
                 {
@@ -76,7 +78,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues2} alt="graph" />
               <Typography variant="h6" className={classes.title}>
-                Connect with followers
+                Control who has access to you
               </Typography>
               <Typography variant="h5">
                 {
@@ -89,10 +91,10 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues3} alt="clock" />
               <Typography variant="h6" className={classes.title}>
-                Earn Money
+                Monetize social interaction
               </Typography>
               <Typography variant="h5">
-                {"Continue doing what you already do and get paid for it too."}
+                {"Continue doing what you've already been doing and get paid for it too."}
               </Typography>
             </div>
           </Grid>

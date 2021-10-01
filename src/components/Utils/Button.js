@@ -3,16 +3,17 @@ import Button from "@material-ui/core/Button"
 
 export default withStyles(theme => ({
   root: {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.extended.darker.orange,
+    color: theme.palette.primary.white,
     borderRadius: 10,
     fontWeight: theme.typography.fontWeightMedium,
     fontFamily: theme.typography.fontFamilySecondary,
     padding: theme.spacing(2, 4),
     fontSize: theme.typography.pxToRem(14),
     boxShadow: "none",
-    "&:active, &:focus": {
-      boxShadow: "none",
-    },
+     "&:active, &:focus": {
+       boxShadow: "none",
+     },
   },
   sizeSmall: {
     padding: theme.spacing(1, 3),

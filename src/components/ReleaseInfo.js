@@ -24,23 +24,26 @@ const styles = theme => ({
   },
 })
 
-function ProductAbout(props) {
+function ReleaseInfo(props) {
   const { classes } = props
 
   return (
     <Container className={classes.root} component="section">
-        <Typography variant="h5" component="span">
-          Who We Are
+        <Typography variant="h4" marked="center" className={classes.title} component="h2">
+          Release Info
         </Typography>
       <Typography variant="subtitle1" className={classes.link}>
-        
+      Early access is live and people like you are already making money on Sway! Sign up here to be considered for our next cohort of early access users.  
+Stay tuned for our public launch in early 2022!  
       </Typography>
     </Container>
   )
 }
 
-ProductAbout.propTypes = {
+ReleaseInfo.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles)(ProductAbout)
+export default withStyles(styles)(ReleaseInfo)
+
+

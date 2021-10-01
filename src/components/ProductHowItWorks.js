@@ -14,12 +14,12 @@ import ProductHowItWorks3 from "../assets/images/productHowItWorks3.svg"
 const styles = theme => ({
   root: {
     display: "flex",
-    backgroundColor: theme.palette.secondary.light,
+    // backgroundColor: theme.palette.extended.accent.blueGreyLight,
     overflow: "hidden",
   },
   container: {
-    marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(15),
+    marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(10),
     position: "relative",
     display: "flex",
     flexDirection: "column",
@@ -32,7 +32,7 @@ const styles = theme => ({
     padding: theme.spacing(0, 5),
   },
   title: {
-    marginBottom: theme.spacing(14),
+    marginBottom: theme.spacing(8),
   },
   number: {
     fontSize: 24,
@@ -60,7 +60,7 @@ function ProductHowItWorks(props) {
   const { classes } = props
 
   return (
-    <section className={classes.root}>
+    <section id="how-it-works" className={classes.root}>
       <Container className={classes.container}>
         <img
           src={ProductCurvyLines}
@@ -73,7 +73,7 @@ function ProductHowItWorks(props) {
           className={classes.title}
           component="h2"
         >
-          How it works
+          <a id="#how-it-works">How It Works</a>
         </Typography>
         <div>
           <Grid container spacing={5}>
@@ -86,7 +86,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  Create a profile and set a nominal fee.
                 </Typography>
               </div>
             </Grid>
@@ -99,8 +99,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited
-                  quantities, so be quick.
+                  Share your profile anywhere people usually try to find you – email, social media, text – and encourage them to message you on Sway. 
                 </Typography>
               </div>
             </Grid>
@@ -113,14 +112,15 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  {"New offers every week. New experiences, new surprises. "}
-                  {"Your Sundays will no longer be alike."}
+                  Get paid by answering messages from people who truly want to speak with you. 
+                  {/* {"New offers every week. New experiences, new surprises. "}
+                  {"Your Sundays will no longer be alike."} */}
                 </Typography>
               </div>
             </Grid>
           </Grid>
         </div>
-        <Button
+        {/* <Button
           color="secondary"
           size="large"
           variant="contained"
@@ -129,7 +129,7 @@ function ProductHowItWorks(props) {
           to="/register"
         >
           Get started
-        </Button>
+        </Button> */}
       </Container>
     </section>
   )

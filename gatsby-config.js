@@ -7,8 +7,9 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `SwayDM`,
-    titleTemplate: `SwayDM | %s`,
+    title: `Sway.DM`,
+    titleTemplate: `Sway.DM`, 
+    // | %s`,
     image: `default.jpg`,
     description: `Marketing site for SwayDM.`,
     author: `Erica Lam`,

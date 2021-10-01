@@ -13,8 +13,6 @@ import ProductHeroLayout from "./ProductHeroLayout"
 
 const styles = theme => ({
   background: {
-    // backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: "#ffffff", // Average color of the background image.
     backgroundPosition: "center",
   },
   button: {
@@ -25,6 +23,7 @@ const styles = theme => ({
     marginTop: theme.spacing(4),
     [theme.breakpoints.up("sm")]: {
       marginTop: theme.spacing(10),
+      justifyContent: "left"
     },
   },
   more: {
@@ -63,7 +62,8 @@ function ProductHero(props) {
   return (
     <ProductHeroLayout
       backgroundClassName={
-        dynamic ? classes.dynamicBackground : classes.background
+  //      dynamic ? classes.dynamicBackground :
+         classes.background
       }
     >
       {/* <img
@@ -97,8 +97,11 @@ function ProductHero(props) {
           />
         </>
       )} */}
+      <Typography color="inherit" align="center" variant="h2" marked="none">
+      Take Control of Your DMs.
+      </Typography>
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Slide Into Those DMs
+      Monetize Your Attention.
       </Typography>
       <Typography
         color="inherit"
@@ -106,7 +109,7 @@ function ProductHero(props) {
         variant="h5"
         className={classes.h5}
       >
-        Keep doing what you do. Influence. Connect. We'll handle the rest.
+        All of your messages in one place for easy management.
       </Typography>
       <Button
         color="primary"
@@ -118,9 +121,9 @@ function ProductHero(props) {
       >
       Learn More
       </Button>
-      <Typography variant="body2" color="inherit" className={classes.more}>
+      {/* <Typography variant="body2" color="inherit" className={classes.more}>
         Watch our video
-      </Typography>
+      </Typography> */}
     </ProductHeroLayout>
   )
 }

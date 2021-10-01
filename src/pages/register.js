@@ -15,6 +15,7 @@ import FormFeedback from "../components/Form/FormFeedback"
 const useStyles = makeStyles(theme => ({
   form: {
     marginTop: theme.spacing(6),
+    backgroundColor: theme.palette.primary.white,
   },
   button: {
     marginTop: theme.spacing(3),
@@ -31,7 +32,7 @@ function RegisterPage() {
 
   const validate = values => {
     const errors = required(
-      ["firstName", "lastName", "email", "password"],
+      ["firstName", "lastName", "email", "instagram"],
       values
     )
 
@@ -54,7 +55,7 @@ function RegisterPage() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign Up For Updates
+            Want to Hear More?
           </Typography>
           <Typography variant="body2" align="center">
             <MuiLink component={Link} to="/login" underline="always">
@@ -67,7 +68,7 @@ function RegisterPage() {
           validate={validate}
         >
           {({ handleSubmit2, submitting }) => (
-            <form name="register" method="post" data-netlify="true" onSubmit={handleSubmit2} className={classes.form} noValidate>
+            <form name="register" method="post" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit2} className={classes.form} noValidate>
               <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -103,6 +104,15 @@ function RegisterPage() {
                 required
               />
               <Field
+                autoComplete="instagram"
+                component={RFTextField}
+                fullWidth
+                label="Instagram Link"
+                margin="normal"
+                name="instagram"
+                required
+              />              
+              {/* <Field
                 fullWidth
                 component={RFTextField}
                 disabled={submitting || sent}
@@ -112,7 +122,7 @@ function RegisterPage() {
                 label="Password"
                 type="password"
                 margin="normal"
-              />
+              /> */}
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
                   submitError ? (
