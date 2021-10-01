@@ -20,6 +20,8 @@ const styles = theme => ({
   title: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(2),
+    fontSize: 46,
+
   },
 
   // button: {
@@ -35,7 +37,8 @@ const styles = theme => ({
     marginLeft: theme.spacing(3),
   },
   link: {
-    fontSize: "1.25rem",
+    fontSize: "1.3rem",
+    //fontSize: "1.25rem",
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
     fontWeight: 300,
@@ -47,11 +50,11 @@ function ProductSmokingHero(props) {
 
   return (
     <Container className={classes.root} component="section">
-        <Typography className={classes.title} variant="h4" component="span">
-          Interested in Being an Earner?
+        <Typography className={classes.title} variant="h4" marked="center" component="span">
+          Get Early Access!
         </Typography>
       <Typography variant="subtitle1" align="center" className={classes.link}>
-        We'd love to work with you. Early access is live and people like you are already making money on Sway! Sign up here to be considered for our next cohort of early access users. Stay tuned for our public launch in early 2022!
+      SwayDM is currently invitation only for earners. Click below to sign up for your invitation. We will let you know when it's your turn.
       </Typography>
       <Button 
           color="primary" 
@@ -61,7 +64,7 @@ function ProductSmokingHero(props) {
           component={Link}
           to="/register"
           >
-          Get in touch
+          Sign Me Up
         </Button>
       {/* <img src={ProductBuoy} className={classes.buoy} alt="buoy" /> */}
     </Container>

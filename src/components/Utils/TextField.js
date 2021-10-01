@@ -47,7 +47,8 @@ const styles = theme => ({
     width: `calc(100% - ${25 * 2}px)`,
   },
   formLabel: {
-    fontSize: 18,
+    fontSize: 22,
+    color: theme.palette.primary.white,
   },
   select: {
     height: "auto",

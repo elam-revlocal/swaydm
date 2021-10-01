@@ -8,19 +8,7 @@ import ProductCurvyLines from "../assets/images/productCurvyLines.png"
 import ProductValues1 from "../assets/images/productValues1.png"
 import ProductValues2 from "../assets/images/productValues2.png"
 import ProductValues3 from "../assets/images/productValues3.png"
-// root: {
-//   display: "flex",
-//   // backgroundColor: theme.palette.extended.accent.blueGreyLight,
-//   overflow: "hidden",
-// },
-// container: {
-//   marginTop: theme.spacing(5),
-//   marginBottom: theme.spacing(10),
-//   position: "relative",
-//   display: "flex",
-//   flexDirection: "column",
-//   alignItems: "center",
-// },
+
 const styles = theme => ({
   root: {
     position: "relative",
@@ -67,7 +55,7 @@ const styles = theme => ({
   item: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
+    alignItems: "left",
     padding: theme.spacing(2, 2),
     color: theme.palette.primary.black,
     backgroundColor: theme.palette.extended.neutral.systemGreys100,
@@ -75,6 +63,7 @@ const styles = theme => ({
   },
   image: {
     height: 55,
+    alignSelf: "flex-start",
   },
   cardTitle: {
     marginTop: theme.spacing(3),
@@ -102,7 +91,7 @@ function ProductValues(props) {
       Sway <strong>ISN’T</strong> another social media app.   
       </Typography>
       <Typography variant="h5" className={classes.paragraph}>
-      Sway is a messaging tool that allows anyone to connect with you, for a nominal fee. By being accessible on email, social media, texting, and more, we’ve become inaccessible. Get paid for answering messages you would answer anyway.
+      By being accessible on email, social media, texting, and more, we’ve become inaccessible. Sway is a messaging tool that helps you filter through the noise of your messaging while earning money.
       </Typography>
       </Container>
         {/* <img
@@ -119,7 +108,7 @@ function ProductValues(props) {
                 alt="ProductValue1"
               />
               <Typography variant="h6" align="left" className={classes.cardTitle}>
-                Regain your attention
+                Take Control of Your DMs
               </Typography>
               <Typography variant="h5">
                 {
@@ -132,11 +121,11 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues2} alt="graph" />
               <Typography variant="h6" className={classes.cardTitle}>
-                Control access to you
+                Regain Your Attention
               </Typography>
               <Typography variant="h5">
                 {
-                  "Increase your influence by creating more connections with followers."
+                  "Focus only on people and messages that matter to you."
                 }
               </Typography>
             </div>
@@ -145,7 +134,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues3} alt="clock" />
               <Typography variant="h6" className={classes.cardTitle}>
-                Connect with followers
+                Connect with Followers
               </Typography>
               <Typography variant="h5">
                 {
@@ -158,10 +147,10 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img className={classes.image} src={ProductValues3} alt="clock" />
               <Typography variant="h6" className={classes.cardTitle}>
-                Monetize social interaction
+                Get Paid
               </Typography>
               <Typography variant="h5">
-                {"Continue doing what you've already been doing and get paid for it too."}
+                {"Earn money by continuing to answer messages like you already do."}
               </Typography>
             </div>
             

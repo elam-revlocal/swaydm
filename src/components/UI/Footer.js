@@ -12,11 +12,10 @@ import TwitterIcon from "../../assets/images/twitterIcon.png"
 function Copyright() {
   return (
     <React.Fragment color>
-      {"© "}
+      {/* {"© "} */}
       <MuiLink color="inherit" href="">
-        SwayDM
+      © SwayDM <span>{new Date().getFullYear()}</span>
       </MuiLink>{" "}
-      {new Date().getFullYear()}
     </React.Fragment>
   )
 }
@@ -32,6 +31,8 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(6),
     display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   iconsWrapper: {
     height: 120,
@@ -63,6 +64,11 @@ const useStyles = makeStyles(theme => ({
     textDecoration: "none",
     color: theme.palette.primary.black,
   },
+  top: {
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: theme.spacing(2),
+  },
 }))
 
 export default function Footer() {
@@ -71,12 +77,12 @@ export default function Footer() {
   return (
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
-        <Grid container spacing={5}>
+        <Grid className={classes.top} container spacing={5}>
           <Grid item xs={6} sm={4} md={3}>
             <Grid
               container
               direction="column"
-              justify="flex-end"
+              justify="center"
               className={classes.iconsWrapper}
               spacing={2}
             >
@@ -157,9 +163,9 @@ export default function Footer() {
               </MuiLink>
             </Typography>
           </Grid> */}
-          <Grid item>
+          {/* <Grid item>
                 <Copyright />
-              </Grid>
+              </Grid> */}
           {/* <Grid item xs={12}>
             <Typography variant="caption">
               {"Theme ported by "}
@@ -174,6 +180,7 @@ export default function Footer() {
             </Typography>
           </Grid> */}
         </Grid>
+        <Copyright className="classes.copyright" />
       </Container>
     </Typography>
   )

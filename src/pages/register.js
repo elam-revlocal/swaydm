@@ -62,7 +62,7 @@ function RegisterPage() {
             </MuiLink>
           </Typography>
           <Typography variant="h5" gutterBottom  align="center">
-            Fill out this form to be considered for our next cohort of early access users!
+            Fill our your information and a Sway teammate will reach out!
           </Typography>
         </React.Fragment>
         <Form 
@@ -107,12 +107,12 @@ function RegisterPage() {
                 required
               />
               <Field
-                autoComplete="instagram"
+                autoComplete="social"
                 component={RFTextField}
                 fullWidth
-                label="Instagram Link"
+                label="Social Media Link"
                 margin="normal"
-                name="instagram"
+                name="social"
                 required
               />              
               {/* <Field

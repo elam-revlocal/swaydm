@@ -18,7 +18,7 @@ const styles = theme => ({
     overflow: "hidden",
   },
   container: {
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(10),
     marginBottom: theme.spacing(10),
     position: "relative",
     display: "flex",
@@ -33,6 +33,7 @@ const styles = theme => ({
   },
   title: {
     marginBottom: theme.spacing(8),
+    fontSize: 46,
   },
   number: {
     fontSize: 24,
@@ -86,7 +87,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Create a profile and set a nominal fee.
+                  Create a profile and set your messaging prices.
                 </Typography>
               </div>
             </Grid>
@@ -99,7 +100,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Share your profile anywhere people usually try to find you – email, social media, text – and encourage them to message you on Sway. 
+                  Share your SwayDM link anywhere people usually try to find you – social media bios, email signatures, and websites – and encourage them to "SwayDM" you. 
                 </Typography>
               </div>
             </Grid>
@@ -112,7 +113,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Get paid by answering messages from people who truly want to speak with you. 
+                  Get paid by for viewing and responding to messages. 
                   {/* {"New offers every week. New experiences, new surprises. "}
                   {"Your Sundays will no longer be alike."} */}
                 </Typography>

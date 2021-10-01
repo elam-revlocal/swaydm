@@ -20,11 +20,11 @@ const styles = theme => ({
   },
   h4: {
     fontWeight: 300,
-    fontSize: 26,
-    marginBottom: theme.spacing(6),
-    marginTop: theme.spacing(4),
+    fontSize: 38,
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {
-      marginTop: theme.spacing(10),
+      marginTop: theme.spacing(8),
     },
   },
   more: {
@@ -98,8 +98,8 @@ function ProductHero(props) {
           />
         </>
       )} */}
-      <Typography color="inherit" align="left" variant="h2" marked="center">
-      Take Control of Your DMs
+      <Typography color="inherit" align="left" variant="h1" marked="none">
+      Messaging is Messy
       </Typography>
       {/* <Typography color="inherit" align="center" variant="h2" marked="center">
       Monetize Your Attention.
@@ -110,7 +110,7 @@ function ProductHero(props) {
         variant="h4"
         className={classes.h4}
       >
-        All of your messages in one place for easy management.
+        Take Control 
       </Typography>
       <Button
         color="primary"
