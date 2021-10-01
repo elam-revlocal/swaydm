@@ -138,13 +138,13 @@ export default function Navbar() {
             divider
             button
             component={Link}
-            to="#"
+            to="/"
             title="Link to App"
             onClick={() => {
               setOpenDrawer(false)
             }}
           >
-            <img src={smallLogo} className={classes.smallLogo}/>
+            <span className={classes.smallLogo}><img src={smallLogo} className={classes.smallLogo}/></span>
           </ListItem>
         <ListItem
             divider
@@ -157,10 +157,10 @@ export default function Navbar() {
             }}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
-              Who We Are
+              What is Sway
             </ListItemText>
           </ListItem>
-        <ListItem
+        {/* <ListItem
             divider
             button
             component={Link}
@@ -173,7 +173,7 @@ export default function Navbar() {
             <ListItemText className={classes.drawerItem} disableTypography>
               Why Sway.DM
             </ListItemText>
-          </ListItem>
+          </ListItem> */}
           <ListItem
             divider
             button
@@ -188,7 +188,7 @@ export default function Navbar() {
               <a href="#how-it-works">How It Works</a>
             </ListItemText>
           </ListItem>
-            <ListItem
+            {/* <ListItem
             className={classes.button}
             divider
             button
@@ -206,7 +206,7 @@ export default function Navbar() {
             >
               Release
             </ListItemText>
-          </ListItem>
+          </ListItem> */}
           <ListItem
             className={classes.button}
             divider
@@ -223,7 +223,7 @@ export default function Navbar() {
               className={`${classes.drawerItem}, ${classes.drawerItemSecondary}`}
               disableTypography
             >
-              Link To App
+              Sign In
             </ListItemText>
           </ListItem>
           <ListItem
@@ -232,7 +232,7 @@ export default function Navbar() {
             button
             component={Link}
             to="/register"
-            title="Link to Register Page"
+            title="Link to App"
             style={{ display: "block" }}
             onClick={() => {
               setOpenDrawer(false)
@@ -287,15 +287,15 @@ export default function Navbar() {
             component={Link}
 //insert href
             to="#who"
-            label="Who We Are"
-            aria-label="Who We Are"
+            label="What is Sway"
+            aria-label="What is Sway"
             variant="h6"
             underline="none"
             color="inherit"
             disableRipple
             classes={{ root: classes.tabRoot }}
           />
-          <Tab
+          {/* <Tab
             className={`${classes.tab}`}
             component={Link}
 //insert href
@@ -307,7 +307,7 @@ export default function Navbar() {
             color="inherit"
             disableRipple
             classes={{ root: classes.tabRoot }}
-          />
+          /> */}
           <Tab
             className={`${classes.tab}`}
             component={Link}
@@ -321,7 +321,7 @@ export default function Navbar() {
             disableRipple
             classes={{ root: classes.tabRoot }}
           />
-          <Tab
+          {/* <Tab
             className={`${classes.tab}`}
             component={Link}
 //insert href
@@ -333,14 +333,14 @@ export default function Navbar() {
             color="inherit"
             disableRipple
             classes={{ root: classes.tabRoot }}
-          />
+          /> */}
           <Tab
             className={`${classes.tab}`}
             component={Link}
 //insert href
             to=""
-            label="Link to App"
-            aria-label="Link to App"
+            label="Sign In"
+            aria-label="Sign In"
             variant="h6"
             underline="none"
             color="inherit"

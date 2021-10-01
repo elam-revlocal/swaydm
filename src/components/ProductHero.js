@@ -18,12 +18,13 @@ const styles = theme => ({
   button: {
     minWidth: 200,
   },
-  h5: {
-    marginBottom: theme.spacing(4),
+  h4: {
+    fontWeight: 300,
+    fontSize: 26,
+    marginBottom: theme.spacing(6),
     marginTop: theme.spacing(4),
     [theme.breakpoints.up("sm")]: {
       marginTop: theme.spacing(10),
-      justifyContent: "left"
     },
   },
   more: {
@@ -97,17 +98,17 @@ function ProductHero(props) {
           />
         </>
       )} */}
-      <Typography color="inherit" align="center" variant="h2" marked="none">
-      Take Control of Your DMs.
+      <Typography color="inherit" align="left" variant="h2" marked="center">
+      Take Control of Your DMs
       </Typography>
-      <Typography color="inherit" align="center" variant="h2" marked="center">
+      {/* <Typography color="inherit" align="center" variant="h2" marked="center">
       Monetize Your Attention.
-      </Typography>
-      <Typography
+      </Typography> */}
+      <Typography 
         color="inherit"
-        align="center"
-        variant="h5"
-        className={classes.h5}
+        align="left"
+        variant="h4"
+        className={classes.h4}
       >
         All of your messages in one place for easy management.
       </Typography>
@@ -119,7 +120,7 @@ function ProductHero(props) {
         component={Link}
         to="/register"
       >
-      Learn More
+      Sign Me Up
       </Button>
       {/* <Typography variant="body2" color="inherit" className={classes.more}>
         Watch our video

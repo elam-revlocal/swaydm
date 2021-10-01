@@ -40,9 +40,6 @@ const styles = theme => ({
     marginBottom: theme.spacing(3),
     fontWeight: 300,
   },
-  buoy: {
-    width: 60,
-  },
 })
 
 function ProductSmokingHero(props) {
@@ -51,12 +48,10 @@ function ProductSmokingHero(props) {
   return (
     <Container className={classes.root} component="section">
         <Typography className={classes.title} variant="h4" component="span">
-          Interested in being an Earner?
+          Interested in Being an Earner?
         </Typography>
-      <Typography variant="subtitle1" className={classes.link}>
+      <Typography variant="subtitle1" align="center" className={classes.link}>
         We'd love to work with you. Early access is live and people like you are already making money on Sway! Sign up here to be considered for our next cohort of early access users. Stay tuned for our public launch in early 2022!
-        <span>
-        </span>
       </Typography>
       <Button 
           color="primary" 

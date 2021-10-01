@@ -5,7 +5,7 @@ import { withStyles } from "@material-ui/core/styles"
 import Container from "@material-ui/core/Container"
 //import productHeroWonder from "../assets/images/productHeroWonder.png"
 import productHeroArrowDown from "../assets/images/productHeroArrowDown.png"
-import TwoPhonesMockup from "../assets/images/twoPhonesMockup.png"
+import heroPhoto from "../assets/images/heroPhoto.png"
 
 const styles = theme => ({
   root: {
@@ -22,8 +22,8 @@ const styles = theme => ({
     },
   },
   container: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(14),
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(18),
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -33,6 +33,9 @@ const styles = theme => ({
     marginBottom: theme.spacing(14),
     display: "flex",
     flexDirection: "column",
+    [theme.breakpoints.down("md")]: {
+      alignContent: "space-around",
+  },
   },
   left: {
 
@@ -80,7 +83,7 @@ function ProductHeroLayout(props) {
         </div>
         </Container>
         <div className={classes.right}>
-        <img src={TwoPhonesMockup} alt="Two Phones" width="550" height="auto" />
+        <img src={heroPhoto} alt="Two Phones" width="500" height="auto" />
         </div>
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} /> 

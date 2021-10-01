@@ -23,7 +23,7 @@ export default function Home() {
       <ProductHero 
       //dynamic 
       />
-      <WhoWeAre />
+      {/* <WhoWeAre /> */}
       {/* <WhySway /> */}
       {/* <HowItWorks /> */}
 

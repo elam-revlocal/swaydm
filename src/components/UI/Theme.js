@@ -14,7 +14,7 @@ const rawTheme = createMuiTheme({
     },
     secondary: {
       light: "#6200a3",
-      main: "#ed6a60",
+      main: "#7a00cc",
       dark: "#ed6a60",
       darkTeal: "#25a8af",
       orange: "#ed6a60",
@@ -94,7 +94,7 @@ const fontHeader = {
   color: rawTheme.palette.text.primary.white,
   fontWeight: rawTheme.typography.fontWeightMedium,
   fontFamily: rawTheme.typography.fontFamilySecondary,
-  textTransform: "uppercase",
+  // textTransform: "uppercase",
 }
 
 const theme = {

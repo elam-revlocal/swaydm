@@ -71,7 +71,7 @@ function RegisterPage() {
           validate={validate}
         >
           {({ handleSubmit, submitting }) => (
-            <form name="register" method="post" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className={classes.form} noValidate>
+            <form name="register" method="post" action="/success/" data-netlify="true"  onSubmit={handleSubmit} className={classes.form} noValidate>
               <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -141,7 +141,7 @@ function RegisterPage() {
                 color="secondary"
                 fullWidth
               >
-                {submitting || sent ? "In progress…" : "Find out more"}
+                {submitting || sent ? "Thank you!" : "Find out more"}
               </FormButton>
             </form>
           )}
