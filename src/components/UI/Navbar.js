@@ -21,7 +21,7 @@ import smallLogo from "../../assets/images/logo/png/Sway Icon_2.png"
 
 const useStyles = makeStyles(theme => ({
   abRoot: {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.main,
   },
   root: {
     color: theme.palette.primary.white,

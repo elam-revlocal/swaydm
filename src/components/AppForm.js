@@ -12,6 +12,7 @@ const styles = theme => ({
     display: "flex",
     backgroundRepeat: "no-repeat",
     backgroundColor: theme.palette.primary.white,
+    color: theme.palette.primary.white,
     marginBottom: theme.spacing(8),
     marginTop: theme.spacing(8),
     alignItems: "center",
@@ -70,11 +71,11 @@ function AppForm(props) {
   return (
     <div className={classes.root}>
       <Container className={classes.outerBox} maxWidth="xl">
-      <img
+      {/* <img
           src={ProductCurvyLines}
           className={classes.curvyLines}
           alt="curvy lines"
-        />
+        /> */}
         <Box mt={7} mb={12} className={classes.box}>
           <Paper className={classes.paper} elevation="2">{children}</Paper>
         </Box>

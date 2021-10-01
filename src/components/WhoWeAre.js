@@ -9,6 +9,7 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    backgroundColor: theme.palette.extended.lightest.purple,
     marginTop: theme.spacing(10),
     marginBottom: theme.spacing(10),
   },

@@ -11,6 +11,7 @@ const styles = theme => ({
     alignItems: "center",
     marginTop: theme.spacing(10),
     marginBottom: theme.spacing(10),
+    backgroundColor: theme.palette.secondary.darkTeal,
   },
   button: {
     border: "4px solid currentColor",
@@ -29,7 +30,7 @@ function HowItWorks(props) {
 
   return (
     <Container className={classes.root} component="section">
-        <Typography variant="h5" component="span">
+        <Typography variant="h3" component="span">
           How It Works
         </Typography>
       <Typography variant="subtitle1" className={classes.link}>

@@ -55,11 +55,14 @@ function RegisterPage() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Want to Hear More?
+            Interested in Sway?
           </Typography>
           <Typography variant="body2" align="center">
             <MuiLink component={Link} to="/login" underline="always">
             </MuiLink>
+          </Typography>
+          <Typography variant="h5" gutterBottom  align="center">
+            Fill out this form to be considered for our next cohort of early access users!
           </Typography>
         </React.Fragment>
         <Form 
@@ -67,8 +70,8 @@ function RegisterPage() {
           subscription={{ submitting: true }}
           validate={validate}
         >
-          {({ handleSubmit2, submitting }) => (
-            <form name="register" method="post" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit2} className={classes.form} noValidate>
+          {({ handleSubmit, submitting }) => (
+            <form name="register" method="post" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className={classes.form} noValidate>
               <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -138,7 +141,7 @@ function RegisterPage() {
                 color="secondary"
                 fullWidth
               >
-                {submitting || sent ? "In progress…" : "Sign Up"}
+                {submitting || sent ? "In progress…" : "Find out more"}
               </FormButton>
             </form>
           )}
