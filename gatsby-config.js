@@ -10,7 +10,7 @@ module.exports = {
     title: `Sway.DM`,
     titleTemplate: `Sway.DM`, 
     // | %s`,
-    image: `default.jpg`,
+    image: `default.png`,
     description: `Marketing site for SwayDM.`,
     author: `Erica Lam`,
     siteUrl: `https://swaydm.netlify.app`,
