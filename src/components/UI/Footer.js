@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     zIndex: 3,
   },
   container: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(6),
     marginBottom: theme.spacing(6),
     display: "flex",
     flexDirection: "column",
@@ -53,10 +53,11 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: theme.palette.primary.white,
-    marginRight: theme.spacing(1),
+    backgroundColor: theme.palette.primary.light,
+    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
     "&:hover": {
-      backgroundColor: theme.palette.primary.light,
+      backgroundColor: theme.palette.primary.white,
     },
   },
   list: {

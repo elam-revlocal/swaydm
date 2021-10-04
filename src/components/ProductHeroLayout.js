@@ -15,7 +15,7 @@ const styles = theme => ({
     alignItems: "center",
     justifyContent: "left",
     [theme.breakpoints.up("sm")]: {
-      marginTop: "7em",
+      marginTop: "5em",
       height: "87vh",
       minHeight: 500,
       maxHeight: 1300,
@@ -30,12 +30,18 @@ const styles = theme => ({
     marginTop: theme.spacing(10),
     marginBottom: theme.spacing(12),
     display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  middleContainer: {
+    display: "flex",
     flexDirection: "row",
     alignItems: "center",
   },
+
   innerContainer: {
     marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(14),
+    marginBottom: theme.spacing(10),
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.down("md")]: {
@@ -54,6 +60,10 @@ const styles = theme => ({
     [theme.breakpoints.down("md")]: {
       display: "none",
   },
+  arrowWrap: {
+    display: "inline-block",
+    textAlign: "center",
+  }
 },
   backdrop: {
     position: "absolute",
@@ -77,7 +87,7 @@ const styles = theme => ({
   },
   arrowDown: {
     position: "absolute",
-    bottom: theme.spacing(4)
+    bottom: theme.spacing(4),
   },
 })
 
@@ -87,6 +97,7 @@ function ProductHeroLayout(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
+      <Container className= {classes.middleContainer}>
       <Container className={classes.innerContainer}>
         <div className={classes.left}>
         {children}
@@ -96,15 +107,18 @@ function ProductHeroLayout(props) {
         <img src={heroPhoto} alt="Two Phones" width="500" height="auto" />
         </div>
         <div className={classes.backdrop} />
-        <div className={clsx(classes.background, backgroundClassName)} /> 
+        <div className={clsx(classes.background, backgroundClassName)} />
+        </Container>
+        <div className="arrow">
         <img
           className={classes.arrowDown}
           src={productHeroArrowDown}
-          height="16"
-          width="12"
+          height="28"
+          width="21"
           alt="arrow down"
         />
-      </Container>
+        </div> 
+        </Container>
     </section>
   )
 }

@@ -15,6 +15,12 @@ const styles = theme => ({
   background: {
     backgroundPosition: "center",
   },
+  title: {
+    align: "left",
+    [theme.breakpoints.down("md")]: {
+      align: "center",
+    },
+  },
   button: {
     minWidth: 200,
   },
@@ -23,7 +29,7 @@ const styles = theme => ({
     fontSize: 38,
     marginBottom: theme.spacing(4),
     [theme.breakpoints.up("xs")]: {
-      marginTop: theme.spacing(8),
+      marginTop: theme.spacing(12),
     },
   },
   more: {
@@ -97,7 +103,7 @@ function ProductHero(props) {
           />
         </>
       )} */}
-      <Typography color="inherit" align="left" variant="h1" marked="none">
+      <Typography className="title" color="inherit" variant="h1" marked="none">
       Messaging is Messy
       </Typography>
       {/* <Typography color="inherit" align="center" variant="h2" marked="center">

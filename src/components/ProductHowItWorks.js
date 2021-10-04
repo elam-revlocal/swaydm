@@ -9,7 +9,7 @@ import Typography from "./Utils/Typography"
 import ProductCurvyLines from "../assets/images/productCurvyLines.png"
 import ProductHowItWorks1 from "../assets/images/productHowItWorks1.png"
 import ProductHowItWorks2 from "../assets/images/productHowItWorks2.png"
-import ProductValues4 from "../assets/images/productValues4.png"
+import ProductHowItWorks3 from "../assets/images/productHowItWorks3.png"
 
 const styles = theme => ({
   root: {
@@ -36,7 +36,7 @@ const styles = theme => ({
     fontSize: 46,
   },
   number: {
-    fontSize: 26,
+    fontSize: 22,
     fontFamily: theme.typography.fontFamily,
     color: theme.palette.secondary.main,
     fontWeight: theme.typography.fontWeightMedium,
@@ -61,7 +61,7 @@ function ProductHowItWorks(props) {
   const { classes } = props
 
   return (
-    <section id="how-it-works" className={classes.root}>
+    <section className={classes.root}>
       <Container className={classes.container}>
         <img
           src={ProductCurvyLines}
@@ -74,46 +74,46 @@ function ProductHowItWorks(props) {
           className={classes.title}
           component="h2"
         >
-          <a id="#how-it-works">How It Works</a>
+          How It Works
         </Typography>
         <div>
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <div className={classes.number}>1.</div>
+                {/* <div className={classes.number}>1.</div> */}
                 <img
                   src={ProductHowItWorks1}
-                  alt="suitcase"
+                  alt="chat bubble"
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Create a profile and set your messaging prices.
+                  <span className={classes.number}>1. </span>Create a profile and set your messaging prices.
                 </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <div className={classes.number}>2.</div>
+                {/* <div className={classes.number}>2.</div> */}
                 <img
                   src={ProductHowItWorks2}
-                  alt="graph"
+                  alt="megaphone"
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Share your SwayDM link anywhere people usually try to find you – social media bios, email signatures, and websites – and encourage them to "SwayDM" you. 
+                <span className={classes.number}>2. </span>Share your SwayDM link anywhere people usually try to find you – social media bios, email signatures, and websites – and encourage them to "SwayDM" you. 
                 </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <div className={classes.number}>3.</div>
+                {/* <div className={classes.number}>3.</div> */}
                 <img
-                  src={ProductValues4}
-                  alt="clock"
+                  src={ProductHowItWorks3}
+                  alt="dollar sign"
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Get paid by for viewing and responding to messages. 
+                <span className={classes.number}>3. </span>Get paid by viewing and responding to messages. 
                   {/* {"New offers every week. New experiences, new surprises. "}
                   {"Your Sundays will no longer be alike."} */}
                 </Typography>
