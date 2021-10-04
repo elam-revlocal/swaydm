@@ -20,12 +20,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     ...
-    //   },  
-    // 'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,7 +36,7 @@ module.exports = {
         fonts: [
           // `roboto slab\:300,400,400i,500,600,700,800,900`,
           // `roboto\::300,400,400i,500,600,700,800,900`,
-          `roboto condensed\::300,400,400i,500,600,700,800,900`,
+          `nunito sans\::300,400,400i,500,600,700,800,900`,
           `work sans\::300,400,400i,500,600,700,800,900`,
           // you can also specify font weights and styles
         ],

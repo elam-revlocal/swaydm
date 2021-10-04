@@ -7,9 +7,9 @@ import Container from "@material-ui/core/Container"
 import Button from "./Utils/Button"
 import Typography from "./Utils/Typography"
 import ProductCurvyLines from "../assets/images/productCurvyLines.png"
-import ProductHowItWorks1 from "../assets/images/productHowItWorks1.svg"
-import ProductHowItWorks2 from "../assets/images/productHowItWorks2.svg"
-import ProductHowItWorks3 from "../assets/images/productHowItWorks3.svg"
+import ProductHowItWorks1 from "../assets/images/productHowItWorks1.png"
+import ProductHowItWorks2 from "../assets/images/productHowItWorks2.png"
+import ProductValues4 from "../assets/images/productValues4.png"
 
 const styles = theme => ({
   root: {
@@ -36,7 +36,7 @@ const styles = theme => ({
     fontSize: 46,
   },
   number: {
-    fontSize: 24,
+    fontSize: 26,
     fontFamily: theme.typography.fontFamily,
     color: theme.palette.secondary.main,
     fontWeight: theme.typography.fontWeightMedium,
@@ -108,7 +108,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>3.</div>
                 <img
-                  src={ProductHowItWorks3}
+                  src={ProductValues4}
                   alt="clock"
                   className={classes.image}
                 />

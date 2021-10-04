@@ -8,6 +8,8 @@ import ProductCurvyLines from "../assets/images/productCurvyLines.png"
 import ProductValues1 from "../assets/images/productValues1.png"
 import ProductValues2 from "../assets/images/productValues2.png"
 import ProductValues3 from "../assets/images/productValues3.png"
+import ProductValues4 from "../assets/images/productValues4.png"
+
 
 const styles = theme => ({
   root: {
@@ -41,11 +43,19 @@ const styles = theme => ({
     marginBottom: theme.spacing(3),
     color: theme.palette.primary.white,
     padding: theme.spacing(2, 2),
+    [theme.breakpoints.down("md")]: {
+      // display: "flex",
+      // flexDirection: "column",
+      // justifyContent: "center",
+      // alignItems: "center",
+      justify: "center",
+      align: "center"
+  },
 
   },
   subtitle: {
     fontWeight: 500,
-    padding: theme.spacing(1, 3),
+    padding: theme.spacing(1, 2),
   },
   paragraph: {
     fontWeight: 500,
@@ -145,7 +155,7 @@ function ProductValues(props) {
             </Grid>
             <Grid item xs={12} md={6}>
             <div className={classes.item}>
-              <img className={classes.image} src={ProductValues3} alt="clock" />
+              <img className={classes.image} src={ProductValues4} alt="dollar sign" />
               <Typography variant="h6" className={classes.cardTitle}>
                 Get Paid
               </Typography>

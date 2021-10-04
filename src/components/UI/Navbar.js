@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   },
   root: {
     color: theme.palette.primary.white,
-  },
+    },
   logo: {
     height: "80px",
     width: "auto",
@@ -74,6 +74,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 1,
     "& .MuiTab-Root": {
       minWidth: 10,
+
     },
   },
   tabRoot: {
@@ -139,14 +140,18 @@ export default function Navbar() {
             button
             component={Link}
             to="/"
-            title="Link to App"
+            title="Home"
             onClick={() => {
               setOpenDrawer(false)
             }}
-          >
-            <span className={classes.smallLogo}><img src={smallLogo} className={classes.smallLogo}/></span>
+          >        <IconButton
+          aria-label="home logo"
+        >
+            <img src={smallLogo} className={classes.smallLogo}/>
+            </IconButton>
+
           </ListItem>
-        <ListItem
+        {/* <ListItem
             divider
             button
             component={Link}
@@ -159,7 +164,7 @@ export default function Navbar() {
             <ListItemText className={classes.drawerItem} disableTypography>
               What is Sway
             </ListItemText>
-          </ListItem>
+          </ListItem> */}
         {/* <ListItem
             divider
             button
@@ -174,7 +179,7 @@ export default function Navbar() {
               Why Sway.DM
             </ListItemText>
           </ListItem> */}
-          <ListItem
+          {/* <ListItem
             divider
             button
             component={Link}
@@ -185,9 +190,9 @@ export default function Navbar() {
             }}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
-              <a href="#how-it-works">How It Works</a>
+          How It Works
             </ListItemText>
-          </ListItem>
+          </ListItem> */}
             {/* <ListItem
             className={classes.button}
             divider
@@ -212,8 +217,8 @@ export default function Navbar() {
             divider
             button
             component={Link}
-            to="/register"
-            title="Link to Register Page"
+            to="sway.dm/login"
+            title="Link to Sway Login"
             style={{ display: "block" }}
             onClick={() => {
               setOpenDrawer(false)
@@ -223,7 +228,7 @@ export default function Navbar() {
               className={`${classes.drawerItem}, ${classes.drawerItemSecondary}`}
               disableTypography
             >
-              Sign In
+              Login
             </ListItemText>
           </ListItem>
           <ListItem
@@ -272,17 +277,17 @@ export default function Navbar() {
             },
           }}
         >
-          <Tab
+          {/* <Tab
             className={`${classes.smallLogo}`}
             component={Link}
 //insert href
             to="/"
-            label=""
+            label="home"
             aria-label="Home"
             disableRipple
             classes={{ root: classes.tabRoot }}
-          />
-          <Tab
+          /> */}
+          {/* <Tab
             className={`${classes.tab}`}
             component={Link}
 //insert href
@@ -294,7 +299,7 @@ export default function Navbar() {
             color="inherit"
             disableRipple
             classes={{ root: classes.tabRoot }}
-          />
+          /> */}
           {/* <Tab
             className={`${classes.tab}`}
             component={Link}
@@ -308,7 +313,7 @@ export default function Navbar() {
             disableRipple
             classes={{ root: classes.tabRoot }}
           /> */}
-          <Tab
+          {/* <Tab
             className={`${classes.tab}`}
             component={Link}
 //insert href
@@ -320,7 +325,7 @@ export default function Navbar() {
             color="inherit"
             disableRipple
             classes={{ root: classes.tabRoot }}
-          />
+          /> */}
           {/* <Tab
             className={`${classes.tab}`}
             component={Link}
@@ -336,11 +341,11 @@ export default function Navbar() {
           /> */}
           <Tab
             className={`${classes.tab}`}
-            component={Link}
-//insert href
-            to=""
-            label="Sign In"
-            aria-label="Sign In"
+            // component={Link}
+            href="http://sway.dm/login"
+            // to="sway.dm/login"
+            label="Login"
+            aria-label="Login"
             variant="h6"
             underline="none"
             color="inherit"

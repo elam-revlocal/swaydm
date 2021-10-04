@@ -2,12 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 //import Button from "@material-ui/core/Button"
 import { Link } from "gatsby"
-
 import Container from "@material-ui/core/Container"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "./Utils/Typography"
 import Button from "./Utils/Button"
-import ProductBuoy from "../assets/images/productBuoy.svg"
 
 const styles = theme => ({
   root: {
@@ -34,7 +32,6 @@ const styles = theme => ({
     color: theme.palette.primary.white,
     textDecoration: "none",
     minWidth: 200,
-    marginLeft: theme.spacing(3),
   },
   link: {
     fontSize: "1.3rem",
@@ -50,7 +47,7 @@ function ProductSmokingHero(props) {
 
   return (
     <Container className={classes.root} component="section">
-        <Typography className={classes.title} variant="h4" marked="center" component="span">
+        <Typography className={classes.title} variant="h4" marked="center" align="center" component="span">
           Get Early Access!
         </Typography>
       <Typography variant="subtitle1" align="center" className={classes.link}>

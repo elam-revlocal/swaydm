@@ -5,6 +5,14 @@ import { capitalize } from "@material-ui/core/utils"
 import MuiTypography from "@material-ui/core/Typography"
 
 const styles = theme => ({
+  markedH1Center: {
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+  },
+  },
   markedH2Center: {
     height: 4,
     //width: 73,

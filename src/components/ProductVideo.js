@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import Container from "@material-ui/core/Container"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "./Utils/Typography"
-import ProductBuoy from "../assets/images/productBuoy.svg"
 
 const styles = theme => ({
   root: {

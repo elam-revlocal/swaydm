@@ -36,9 +36,16 @@ const useStyles = makeStyles(theme => ({
   },
   iconsWrapper: {
     height: 120,
+    // display: "flex",
+    // align: "center",
+    // justifyContent: "center",
+
   },
   icons: {
     display: "flex",
+    flexDirection: "row",
+    align: "center",
+    justifyContent: "center",
   },
   icon: {
     width: 48,
@@ -77,7 +84,7 @@ export default function Footer() {
   return (
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
-        <Grid className={classes.top} container spacing={5}>
+        <Grid align="center" className={classes.top} container spacing={5}>
           <Grid item xs={6} sm={4} md={3}>
             <Grid
               container
@@ -99,7 +106,7 @@ export default function Footer() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={4} md={2}>
+          {/* <Grid item xs={12} sm={4} md={2}>
             <Typography variant="h6" marked="left" gutterBottom>
               Legal
             </Typography>
@@ -115,7 +122,7 @@ export default function Footer() {
                 </MuiLink>
               </li>
             </ul>
-          </Grid>
+          </Grid> */}
           {/* <Grid item xs={6} sm={8} md={4}>
             <Typography variant="h6" marked="left" gutterBottom>
               Language

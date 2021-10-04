@@ -11,15 +11,22 @@ import { email, required } from "../components/Form/validation"
 import RFTextField from "../components/Form/RFTextField"
 import FormButton from "../components/Form/FormButton"
 import FormFeedback from "../components/Form/FormFeedback"
+// import CheckboxLabel from "../components/Form/CheckBoxLabel"
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import theme from "../components/UI/Theme"
 
 const useStyles = makeStyles(theme => ({
   form: {
     marginTop: theme.spacing(6),
-    backgroundColor: theme.palette.primary.white,
   },
   button: {
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(2),
+  },
+  checkbox: {
+    color: theme.palette.primary.white,
   },
   feedback: {
     marginTop: theme.spacing(2),
@@ -32,7 +39,7 @@ function RegisterPage() {
 
   const validate = values => {
     const errors = required(
-      ["firstName", "lastName", "email", "instagram"],
+      ["firstName", "lastName", "email", "social"],
       values
     )
 
@@ -114,7 +121,11 @@ function RegisterPage() {
                 margin="normal"
                 name="social"
                 required
-              />              
+              />
+              <FormGroup className={classes.checkbox}>
+                <FormControlLabel control={<Checkbox />} value="betaTester" color="white" label="I'm interested in being a beta tester" />
+                <FormControlLabel  control={<Checkbox />} value="ambassador" color={theme.palette.common.white} label="I'm interested in being an ambassador" />
+              </FormGroup>                             
               {/* <Field
                 fullWidth
                 component={RFTextField}

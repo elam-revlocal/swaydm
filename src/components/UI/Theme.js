@@ -80,6 +80,31 @@ const rawTheme = createMuiTheme({
       dark: green[700],
     },
   },
+  overrides: {
+    MuiCheckbox: {
+      colorSecondary: {
+        color: "white",
+        "&:hover": {
+          color: "blue"
+        },
+        "&$checked": {
+          color: "white",
+          "&:hover": {
+            color: "#b647ff"
+          },
+          "&.Mui-focusVisible": {
+            color: "white"
+          }
+        },
+        "&.Mui-focusVisible": {
+          color: "white"
+        },
+        "&.focused:not(.Mui-focusVisible):not($checked)": {
+          color: "white"
+        }
+      }
+    }
+  },
   typography: {
     fontFamily: "'Nunito Sans', sans-serif",
     fontSize: 14,

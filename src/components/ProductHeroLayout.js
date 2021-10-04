@@ -20,10 +20,15 @@ const styles = theme => ({
       minHeight: 500,
       maxHeight: 1300,
     },
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+  },
   },
   container: {
     marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(18),
+    marginBottom: theme.spacing(12),
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -38,7 +43,12 @@ const styles = theme => ({
   },
   },
   left: {
-
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+  },
   },
   right: {
     [theme.breakpoints.down("md")]: {
@@ -87,13 +97,13 @@ function ProductHeroLayout(props) {
         </div>
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} /> 
-        {/* <img
+        <img
           className={classes.arrowDown}
           src={productHeroArrowDown}
           height="16"
           width="12"
           alt="arrow down"
-        /> */}
+        />
       </Container>
     </section>
   )

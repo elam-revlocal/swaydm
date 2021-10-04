@@ -22,8 +22,7 @@ const styles = theme => ({
     fontWeight: 300,
     fontSize: 38,
     marginBottom: theme.spacing(4),
-    marginTop: theme.spacing(2),
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("xs")]: {
       marginTop: theme.spacing(8),
     },
   },
