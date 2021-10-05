@@ -122,10 +122,10 @@ function RegisterPage() {
                 name="social"
                 required
               />
-              <FormGroup className={classes.checkbox}>
+              {/* <FormGroup className={classes.checkbox}>
                 <FormControlLabel control={<Checkbox />} value="betaTester" color="white" label="I'm interested in being a beta tester" />
                 <FormControlLabel  control={<Checkbox />} value="ambassador" color={theme.palette.common.white} label="I'm interested in being an ambassador" />
-              </FormGroup>                             
+              </FormGroup>                              */}
               {/* <Field
                 fullWidth
                 component={RFTextField}
