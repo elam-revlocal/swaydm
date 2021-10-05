@@ -37,24 +37,24 @@ const styles = theme => ({
     justifyContent: "center",
     marginRight: theme.spacing(5),
     color: theme.palette.primary.white,
-    [theme.breakpoints.down("md", "xs")]: {
-      alignItems: "center",
-    },  
+    // [theme.breakpoints.down("md", "xs")]: {
+    //   alignItems: "center",
+    // },  
   },
-  mobile: {
-    [theme.breakpoints.down("md")]: {
-      textAlign: "center",
-      justifyContent: "center",
-    },  
-  },
+  // mobile: {
+  //   [theme.breakpoints.down("md")]: {
+  //     textAlign: "center",
+  //     justifyContent: "center",
+  //   },  
+  // },
   title: {
     marginBottom: theme.spacing(3),
     color: theme.palette.primary.white,
     padding: theme.spacing(2, 2),
-    [theme.breakpoints.down("md")]: {
-      textAlign: "center",
-      justifyContent: "center",
-    },  
+    // [theme.breakpoints.down("md")]: {
+    //   textAlign: "center",
+    //   justifyContent: "center",
+    // },  
     // [theme.breakpoints.down("sm")]: {
     //   align: "center",
     //   justifyContent: "center",
@@ -63,19 +63,19 @@ const styles = theme => ({
   subtitle: {
     fontWeight: 500,
     padding: theme.spacing(1, 2),
-    [theme.breakpoints.down("md")]: {
-      textAlign: "center",
-      justifyContent: "center",
-    },  
+    // [theme.breakpoints.down("md")]: {
+    //   textAlign: "center",
+    //   justifyContent: "center",
+    // },  
   },
   paragraph: {
     fontWeight: 500,
     fontSize: 23,
     padding: theme.spacing(4, 2),
-    [theme.breakpoints.down("md")]: {
-      textAlign: "center",
-      justifyContent: "center",
-    },  
+    // [theme.breakpoints.down("md")]: {
+    //   textAlign: "center",
+    //   justifyContent: "center",
+    // },  
   },
   item: {
     display: "flex",

@@ -53,11 +53,11 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.white,
     marginRight: theme.spacing(2),
     marginLeft: theme.spacing(2),
     "&:hover": {
-      backgroundColor: theme.palette.primary.white,
+      backgroundColor: theme.palette.primary.light,
     },
   },
   list: {
@@ -99,7 +99,7 @@ export default function Footer() {
                   <img src={instagramIcon} alt="Instagram" />
                 </a>
                 <a
-                  href=""
+                  href="https://twitter.com/swaydmme"
                   className={classes.icon}
                 >
                   <img src={TwitterIcon} alt="Twitter" />
