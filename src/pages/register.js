@@ -77,7 +77,7 @@ function RegisterPage() {
           subscription={{ submitting: true }}
           validate={validate}
         >
-          {({ handleSubmit, submitting }) => (
+          {({ handleSubmit2, submitting }) => (
             <form name="register" method="post" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={handleSubmit2} className={classes.form} noValidate>
               <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
