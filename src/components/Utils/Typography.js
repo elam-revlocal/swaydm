@@ -43,6 +43,12 @@ const styles = theme => ({
     marginTop: theme.spacing(0.5),
     background: "currentColor",
   },
+  titleAlign: {
+      align: "left",
+      [theme.breakpoints.down("md")]: {
+        align: "center",
+      },
+    },
 })
 
 const variantMapping = {

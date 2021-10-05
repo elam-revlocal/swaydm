@@ -98,7 +98,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: "1rem",
     fontWeight: 600,
     opacity: 0.9,
-    padding: ".25em 1em",
+    padding: ".5em 1em",
   },
   drawerItemSecondary: {
     color: theme.palette.primary.black,
@@ -106,7 +106,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: "1rem",
     fontWeight: 600,
     opacity: 0.95,
-    padding: ".25em 1em",
+    padding: ".5em 1em",
   },
 }))
 
@@ -135,7 +135,7 @@ export default function Navbar() {
         }}
       >
         <List disablePadding>
-        <ListItem
+        {/* <ListItem
             divider
             button
             component={Link}
@@ -150,7 +150,7 @@ export default function Navbar() {
             <img src={smallLogo} className={classes.smallLogo}/>
             </IconButton>
 
-          </ListItem>
+          </ListItem> */}
         {/* <ListItem
             divider
             button
@@ -217,7 +217,7 @@ export default function Navbar() {
             divider
             button
             component={Link}
-            to="sway.dm/login"
+            to="http://sway.dm/login"
             title="Link to Sway Login"
             style={{ display: "block" }}
             onClick={() => {

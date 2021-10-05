@@ -10,6 +10,7 @@ function FormButton(props) {
       disabled={!mounted || disabled}
       type="submit"
       variant="contained"
+      color="primary"
       {...others}
     />
   )

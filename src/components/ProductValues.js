@@ -34,33 +34,48 @@ const styles = theme => ({
   left: {
     display: "flex",
     flexDirection: "column",
-    alignContent: "center",
     justifyContent: "center",
     marginRight: theme.spacing(5),
-    color: theme.palette.primary.white,  
+    color: theme.palette.primary.white,
+    [theme.breakpoints.down("md", "xs")]: {
+      alignItems: "center",
+    },  
+  },
+  mobile: {
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+      justifyContent: "center",
+    },  
   },
   title: {
     marginBottom: theme.spacing(3),
     color: theme.palette.primary.white,
     padding: theme.spacing(2, 2),
     [theme.breakpoints.down("md")]: {
-      // display: "flex",
-      // flexDirection: "column",
-      // justifyContent: "center",
-      // alignItems: "center",
-      justify: "center",
-      align: "center"
-  },
-
+      textAlign: "center",
+      justifyContent: "center",
+    },  
+    // [theme.breakpoints.down("sm")]: {
+    //   align: "center",
+    //   justifyContent: "center",
+    // },  
   },
   subtitle: {
     fontWeight: 500,
     padding: theme.spacing(1, 2),
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+      justifyContent: "center",
+    },  
   },
   paragraph: {
     fontWeight: 500,
     fontSize: 23,
     padding: theme.spacing(4, 2),
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+      justifyContent: "center",
+    },  
   },
   item: {
     display: "flex",
@@ -94,8 +109,9 @@ function ProductValues(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
       <Container className={classes.left}>
-      <Typography variant="h2" className={classes.title}>
+      <Typography variant="h2" align="left" className={classes.title}>
         What is Sway?
+        {/* <span className={classes.mobile}>What is Sway?</span> */}
       </Typography>
       <Typography variant="h4" className={classes.subtitle}>
       Sway <strong>ISN’T</strong> another social media app.   

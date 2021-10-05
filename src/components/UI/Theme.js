@@ -103,8 +103,8 @@ const rawTheme = createMuiTheme({
           color: "white"
         }
       }
-    }
-  },
+    },
+},
   typography: {
     fontFamily: "'Nunito Sans', sans-serif",
     fontSize: 14,

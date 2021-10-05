@@ -5,6 +5,8 @@ import { withStyles } from "@material-ui/core/styles"
 import Button from "./Utils/Button"
 import Typography from "./Utils/Typography"
 import ProductHeroLayout from "./ProductHeroLayout"
+import { mergeClasses } from "@material-ui/styles"
+
 //import PoolVideo from "../assets/videos/dynamicProductHero.mp4"
 // import PoolPlaceholder from "../assets/images/dynamicVidPlaceholder.jpg"
 
@@ -16,10 +18,11 @@ const styles = theme => ({
     backgroundPosition: "center",
   },
   title: {
-    align: "left",
+    textAlign: "left",
     [theme.breakpoints.down("md")]: {
-      align: "center",
-    },
+      textAlign: "center",
+      justifyContent: "center",
+    },  
   },
   button: {
     minWidth: 200,
@@ -103,7 +106,12 @@ function ProductHero(props) {
           />
         </>
       )} */}
-      <Typography className="title" color="inherit" variant="h1" marked="none">
+      <Typography 
+      color="inherit" 
+      variant="h1"
+      className={classes.title}
+      // marked="center"
+      >
       Messaging is Messy
       </Typography>
       {/* <Typography color="inherit" align="center" variant="h2" marked="center">

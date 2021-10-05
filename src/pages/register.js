@@ -65,8 +65,8 @@ function RegisterPage() {
             Interested in Sway?
           </Typography>
           <Typography variant="body2" align="center">
-            <MuiLink component={Link} to="/login" underline="always">
-            </MuiLink>
+            {/* <MuiLink component={Link} to="/login" underline="always">
+            </MuiLink> */}
           </Typography>
           <Typography variant="h5" gutterBottom  align="center">
             Fill our your information and a Sway teammate will reach out!
@@ -78,7 +78,7 @@ function RegisterPage() {
           validate={validate}
         >
           {({ handleSubmit, submitting }) => (
-            <form name="register" method="post" action="/success/" data-netlify="true"  onSubmit={handleSubmit} className={classes.form} noValidate>
+            <form name="register" method="post" action="/success/" data-netlify="true" netlify-honeypot="bot-field"  onSubmit={handleSubmit} className={classes.form} noValidate>
               <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -149,7 +149,7 @@ function RegisterPage() {
               <FormButton
                 className={classes.button}
                 disabled={submitting || sent}
-                color="secondary"
+                color="white"
                 fullWidth
               >
                 {submitting || sent ? "Thank you!" : "Find out more"}
