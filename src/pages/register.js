@@ -106,7 +106,7 @@ function RegisterPage() {
               <Field
                 autoComplete="email"
                 component={RFTextField}
-                disabled={submitting || sent}
+                // disabled={submitting || sent}
                 fullWidth
                 label="Email"
                 margin="normal"
@@ -122,10 +122,10 @@ function RegisterPage() {
                 name="social"
                 required
               />
-              {/* <FormGroup className={classes.checkbox}>
+              <FormGroup className={classes.checkbox}>
                 <FormControlLabel control={<Checkbox />} value="betaTester" color="white" label="I'm interested in being a beta tester" />
                 <FormControlLabel  control={<Checkbox />} value="ambassador" color={theme.palette.common.white} label="I'm interested in being an ambassador" />
-              </FormGroup>                              */}
+              </FormGroup>                             
               {/* <Field
                 fullWidth
                 component={RFTextField}
@@ -148,11 +148,11 @@ function RegisterPage() {
               </FormSpy>
               <FormButton
                 className={classes.button}
-                disabled={submitting || sent}
+                // disabled={submitting || sent}
                 color="white"
                 fullWidth
               >
-                {submitting || sent ? "Thank you!" : "Find out more"}
+                {submitting || sent ? "Pending..." : "Find out more"}
               </FormButton>
             </form>
           )}
