@@ -8,10 +8,10 @@ import Typography from "../components/Utils/Typography"
 export default function SuccessPage() {
   return (
     <Layout>
-      <Container>
+      <Container align="center">
         <Box mt={7} mb={12}>
-          <Typography variant="h3" gutterBottom marked="center" align="center">
-            Thank you for your submission!
+          <Typography variant="h3" gutterBottom marked="center" align="center" justify="center">
+            Thank you! We look forward to connecting with you.
           </Typography>
           {/* <Typography
             variant="body1"

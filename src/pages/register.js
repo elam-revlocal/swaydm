@@ -78,7 +78,7 @@ function RegisterPage() {
           validate={validate}
         >
           {({ handleSubmit, submitting }) => (
-            <form name="register" method="post" action="/success/" data-netlify="true" netlify-honeypot="bot-field"  onSubmit={handleSubmit} className={classes.form} noValidate>
+            <form name="register" method="post" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={handleSubmit2} className={classes.form} noValidate>
               <input type="hidden" name="form-name" value="register" />
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -123,8 +123,8 @@ function RegisterPage() {
                 required
               />
               <FormGroup className={classes.checkbox}>
-                <FormControlLabel control={<Checkbox />} value="betaTester" color="white" label="I'm interested in being a beta tester" />
-                <FormControlLabel  control={<Checkbox />} value="ambassador" color={theme.palette.common.white} label="I'm interested in being an ambassador" />
+                <FormControlLabel control={<Checkbox />} name="betaTester" value="betaTester"  label="I'm interested in being a beta tester" />
+                <FormControlLabel  control={<Checkbox />} name="betaTester" value="ambassador"  label="I'm interested in being an ambassador" />
               </FormGroup>                             
               {/* <Field
                 fullWidth
