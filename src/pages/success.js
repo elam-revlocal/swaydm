@@ -1,4 +1,5 @@
 import React from "react"
+import Seo from "../components/Seo"
 import Layout from "../components/UI/Layout"
 import MuiLink from "@material-ui/core/Link"
 import Container from "@material-ui/core/Container"
@@ -18,6 +19,7 @@ function SuccessPage(props) {
 
   return (
     <Layout>
+    <Seo title="Thank You!" />
       <Container align="center" classes={classes.container}>
         <Box mt={7} mb={12}>
           <Typography variant="h3" gutterBottom marked="center" align="center" justify="center">

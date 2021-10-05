@@ -1,4 +1,5 @@
 import React from "react"
+import Seo from "../components/Seo"
 import { Link } from "gatsby"
 import Layout from "../components/UI/Layout"
 import { makeStyles } from "@material-ui/core/styles"
@@ -59,6 +60,7 @@ function RegisterPage() {
 
   return (
     <Layout>
+      <Seo title="Register" />
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
