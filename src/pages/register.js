@@ -37,6 +37,13 @@ const useStyles = makeStyles(theme => ({
 function RegisterPage() {
   const classes = useStyles()
   const [sent, setSent] = React.useState(false)
+  const [betaState, setBetaState] = React.useState(false)
+  const [ambassadorState, setAmbassadorState] = React.useState(false)
+  const [state, setState] = React.useState({
+    checkedBetaTester: false,
+    checkedAmbassador: false,
+  })
+
 
   const validate = values => {
     const errors = required(
@@ -54,6 +61,10 @@ function RegisterPage() {
     return errors
   }
 
+  const handleChange = (event) => {
+    setState({ 
+      [event.target.name]: event.target.checked });
+  }
   const handleSubmit = () => {
     setSent(true)
   }
@@ -124,9 +135,19 @@ function RegisterPage() {
                 name="social"
                 required
               />
+              {/* <CheckboxLabel component="fieldset" className={classes.checkbox}/> */}
               <FormGroup className={classes.checkbox}>
-                <FormControlLabel control={<Checkbox />} name="betaTester" value="betaTester"  label="I'm interested in being a beta tester" />
-                <FormControlLabel  control={<Checkbox />} name="betaTester" value="ambassador"  label="I'm interested in being an ambassador" />
+                <FormControlLabel control={<Checkbox />}
+ 
+                onChange={handleChange} 
+                name="checkedBetaTester" 
+                value="betaTester"  
+                label="I'm interested in being a beta tester" />
+                <FormControlLabel  control={<Checkbox />} 
+                onChange={handleChange} 
+                name="checkedAmbassador" 
+                value="ambassador"  
+                label="I'm interested in being an ambassador" />
               </FormGroup>                             
               {/* <Field
                 fullWidth
