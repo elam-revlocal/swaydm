@@ -7,15 +7,15 @@ import Box from "@material-ui/core/Box"
 import Typography from "../components/Utils/Typography"
 import { makeStyles } from "@material-ui/core/styles"
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   container: {
     marginTop: theme.spacing(15),
     marginBottom: theme.spacing(15),
   },
-})
+}))
 
-function SuccessPage(props) {
-  const { classes } = props
+function SuccessPage() {
+  const classes = useStyles()
 
   return (
     <Layout>
@@ -43,4 +43,4 @@ function SuccessPage(props) {
 }
 
 
-export default makeStyles(styles)(SuccessPage)
+export default SuccessPage
