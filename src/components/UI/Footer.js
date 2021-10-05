@@ -20,6 +20,7 @@ function Copyright() {
   )
 }
 
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -59,6 +60,9 @@ const useStyles = makeStyles(theme => ({
     "&:hover": {
       backgroundColor: theme.palette.primary.light,
     },
+    // address: {
+    //   fontSize: 48,
+    // },
   },
   list: {
     margin: 0,
@@ -106,6 +110,9 @@ export default function Footer() {
                 </a>
               </Grid>
             </Grid>
+            <Grid item xs={12} sm={12} md={12} className="address">
+                <div className={classes.address}>4009 Columbus Rd Suite #1337, Granville, OH 43023</div>
+              </Grid>
           </Grid>
           {/* <Grid item xs={12} sm={4} md={2}>
             <Typography variant="h6" marked="left" gutterBottom>

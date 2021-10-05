@@ -7,10 +7,12 @@ import Box from "@material-ui/core/Box"
 import Typography from "../components/Utils/Typography"
 import { makeStyles } from "@material-ui/core/styles"
 
+
 const useStyles = makeStyles(theme => ({
   container: {
-    marginTop: theme.spacing(15),
-    marginBottom: theme.spacing(15),
+    height: "100vh",
+    width: "100vw",
+    marginTop: theme.spacing(30),
   },
 }))
 
@@ -22,8 +24,11 @@ function SuccessPage() {
     <Seo title="Thank You!" />
       <Container align="center" className={classes.container}>
         <Box mt={7} mb={12}>
+          <Typography variant="h3" gutterBottom  align="center" justify="center">
+            Thank you for your interest in Sway!
+          </Typography>
           <Typography variant="h3" gutterBottom marked="center" align="center" justify="center">
-            Thank you! We look forward to connecting with you.
+            We look forward to connecting with you.
           </Typography>
           {/* <Typography
             variant="body1"
