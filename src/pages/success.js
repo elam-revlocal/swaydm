@@ -20,7 +20,7 @@ function SuccessPage(props) {
   return (
     <Layout>
     <Seo title="Thank You!" />
-      <Container align="center" classes={classes.container}>
+      <Container align="center" className={classes.container}>
         <Box mt={7} mb={12}>
           <Typography variant="h3" gutterBottom marked="center" align="center" justify="center">
             Thank you! We look forward to connecting with you.
